@@ -1,22 +1,19 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss", '@formkit/nuxt', 'nuxt-icons'],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "nuxt-icons",
+    "nuxt-icon",
+  ],
   app: {
     head: {
-      htmlAttrs : {
-        dir : 'rtl',
-        lang: 'fa'
-      }
-    }
+      htmlAttrs: {
+        dir: "rtl",
+        lang: "fa",
+      },
+    },
   },
   imports: {
-    dirs: [
-      'layouts/**',
-      'pages/**',
-      'components/**',
-    ]
+    dirs: ["layouts/**", "pages/**", "components/**", "assets/**"],
   },
-//   css: [
-//     "~/layouts/global.css",
-// ],
 });

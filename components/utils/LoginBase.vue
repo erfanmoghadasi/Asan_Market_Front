@@ -1,30 +1,58 @@
 <template>
   <div
-    class="w-[1153px] h-[536px] rounded-2xl shadow-[0_8px_22px_0px_#004B821A]"
+    class="relative w-[1200px] h-[540px] rounded-2xl shadow-[0_8px_22px_0px_#004B821A]"
   >
     <div class="w-full h-full flex justify-center items-center p-16">
       <!-- ---------------------RIGHT SIDE-------------------- -->
-      <div class="w-1/2 h-full flex items-center justify-center">
+      <div class="w-1/2 h-full flex items-center justify-between">
         <!-- -----------LOGO-------------- -->
         <div class="">
-            <NuxtIcon name="login/Group 275" class="text-[141px] " filled />
+          <NuxtIcon :name='props.iconName' class="text-[141px]" filled />
         </div>
         <!-- -----------TEXT-------------- -->
         <div class="pr-6">
-            <h6 class="text-[#8B8B8B] text-[24px]">Welcome</h6>
-            <h5 class="text-4xl">خـــــوش آمــــدید</h5>
-            <p>آسان مارکت متن خلاصه ساختگی با تولید سادگی نامفهوم از صنعت گرافیک با استفاده از طراحان است</p>
+          <h6 class="text-gray-b5 text-6 font-black">Welcome</h6>
+          <h5 class="text-4xl my-3">{{ title }}</h5>
+          <p class="text-[#4F4F4F]">
+            {{ description }}
+          </p>
         </div>
       </div>
       <!-- ---------------------LEFT SIDE-------------------- -->
 
-      <div class="w-1/2 h-full">
+      <div class="w-1/2 h-full px-16">
         <slot />
+      </div>
+      <!-- ----------------------- BACK TO HOME -------------------------- -->
+      <div
+        class="flex min-w-fit gap-2 text-[#8C8C8C] absolute -bottom-16 cursor-pointer"
+      >
+        <span>بازگشت به خانه</span>
+        <span><Icon name="material-symbols:line-start-arrow" /></span>
       </div>
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const props = defineProps({
+  iconName:  {
+    type: String,
+    required: true
+  },
+  header: {
+    type: String,
+    required: true
+  },
+  title: {
+    type: String,
+    required: true
+  },
+  description: {
+    type: String,
+    required: true
+  },
+});
+</script>
 
 <style scoped></style>

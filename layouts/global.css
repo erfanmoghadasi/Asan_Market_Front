@@ -1,8 +1,0 @@
-@font-face {
-    font-family: "vazir";
-    src: url(~assets/fonts/Vazir.ttf)  format('truetype')
-}
-
-html {
-    font-family: "vazir";
-}

@@ -12,5 +12,16 @@ html {
 }
 
 @layer components {
- 
+    .input-wrapper {
+        @apply relative mb-5
+    }
+    .input-label {
+        @apply absolute px-2 -top-2 right-4 text-xs  bg-white text-gray-b2
+    }
+    .input-field {
+        @apply border border-[#ccc] w-full h-14 py-4 px-3 rounded-[10px]
+    }
+    .c-btn {
+        @apply h-14 border border-primary-orginal rounded-[10px] text-sm font-medium
+    }
 }

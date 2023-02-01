@@ -11,10 +11,11 @@
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/tailwindcss": "^6.3.0",
-    "nuxt": "^3.1.0"
+    "nuxt": "^3.1.0",
+    "nuxt-icon": "^0.2.10"
   },
   "dependencies": {
-    "@formkit/nuxt": "^1.0.0-beta.14",
-    "nuxt-icons": "^3.1.0"
+    "nuxt-icons": "^3.1.0",
+    "vee-validate": "^4.7.3"
   }
 }
