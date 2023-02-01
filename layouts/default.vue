@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-zinc-300">
+    <div class=''>
         shit layout
     </div>
     <slot />

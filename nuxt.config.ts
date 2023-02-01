@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       'components/**',
     ]
   },
-  css: [
-    "~/layouts/global.css",
-],
+//   css: [
+//     "~/layouts/global.css",
+// ],
 });
