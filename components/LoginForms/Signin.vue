@@ -1,7 +1,7 @@
 <template>
   <div class="w-full flex flex-col ">
 
-    <h3 class="font-semibold text-2xl mb-10">ورود و ثبت نام</h3>
+    <h3 class="font-semibold text-2xl mb-10 text-[#CCCCCC">ورود و ثبت نام</h3>
 
     <form class="w-[434px] ">
         <div class="input-wrapper" dir="ltr">

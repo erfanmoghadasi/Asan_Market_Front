@@ -6,16 +6,27 @@
     :title="headersInfo[0].title"
     :description="headersInfo[0].description"
     >
-      <LoginFormsSignin />
+      <component :is="componentsContent()" />
     </UtilsLoginBase>
   </div>
 </template>
 
 <script setup lang="ts">
+import Signin from '/components/LoginForms/Signin.vue'
+import SignupOne from '/components/LoginForms/SignupOne.vue'
+import SignupTwo from '/components/LoginForms/SignupTwo.vue'
+import SignupThree from '/components/LoginForms/SignupThree.vue'
+import SignupFour from '/components/LoginForms/SignupFour.vue'
 
     definePageMeta({
         layout: 'login-layout'
     })
+
+    const componentsContent = (componentName = Signin)  => {
+      return SignupFour
+    } 
+
+    console.log(componentsContent())
 
     const headersInfo = ref([
       {
