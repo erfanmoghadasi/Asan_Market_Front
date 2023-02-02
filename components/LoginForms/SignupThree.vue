@@ -15,11 +15,11 @@
     />
 </div>
 <div class="input-wrapper" dir="ltr">
-    <label class="input-label" for="username">تکرار کلمه عبور</label>
+    <label class="input-label" for="username2">تکرار کلمه عبور</label>
     <input 
     type="password" 
-    name="username"
-    id="username"
+    name="username2"
+    id="username2"
     class="input-field"
     />
 </div>
@@ -27,13 +27,18 @@
 
 <!-- ------------------- BUTTONS -------------------- -->
 <div class="mt-14 flex items-center w-full gap-4">
-    <button class=" w-full c-btn bg-primary-orginal text-white">بعدی</button>
+    <button @click.prevent="handleChange" class=" w-full c-btn bg-primary-orginal text-white">بعدی</button>
 </div>
 </form>
 </div>
 </template>
 
 <script setup lang="ts">
+const emit = defineEmits(['change-page'])
+
+const handleChange = () => {
+    emit('change-page' , 4)
+}
 
 </script>
 

@@ -1,12 +1,11 @@
 <template>
   <div class="w-full h-[100vh]  flex justify-center items-center">
     <UtilsLoginBase 
-    :iconName="headersInfo[0].iconName"
-    :header="headersInfo[0].header"
-    :title="headersInfo[0].title"
-    :description="headersInfo[0].description"
+    :headerInfo="headersInfo[pageNumber]"
+    :pageNumber="pageNumber"
+    @change-page="changePage"
     >
-      <component :is="componentsContent()" />
+      <component  :is="componentsContent" @change-page="changePage" />
     </UtilsLoginBase>
   </div>
 </template>
@@ -21,21 +20,67 @@ import SignupFour from '/components/LoginForms/SignupFour.vue'
     definePageMeta({
         layout: 'login-layout'
     })
+    
+    const pageNumber = ref(0)    
 
-    const componentsContent = (componentName = Signin)  => {
-      return SignupFour
-    } 
+    const changePage = (num : number) => {
+      pageNumber.value = num
+    }
 
-    console.log(componentsContent())
+    const componentsContent = computed(()  => {
+      switch(pageNumber.value) {
+        case 0 : 
+          return Signin
+        
+        case 1 : 
+          return SignupOne
+        
+        case 2 : 
+          return SignupTwo
+        
+        case 3 : 
+          return SignupThree
+        
+        case 4 : 
+          return SignupFour
+        
+      }
+    } )
 
-    const headersInfo = ref([
+
+    const headersInfo = [
       {
-        iconName : 'login/Group 275',
+        iconName : 'login/Group_275',
         header: 'Welcome',
         title: 'خـــــوش آمــــدید',
         description: 'آسان مارکت متن خلاصه ساختگی با تولید سادگی نامفهوم از صنعت گرافیک با استفاده از طراحان است'
-      }
-    ])
+      },
+      {
+        iconName : 'login/Group',
+        header: 'Enter your number',
+        title: 'وارد کردن شماره همراه',
+        description: 'برای دریافت کد فعالسازی و ادامه فرآیند ثبت نام شماره همراه خود را وارد نمایید'
+      },
+      {
+        iconName : 'login/messages',
+        header: 'Receive activation code',
+        title: 'دريافت كد فعالسازی',
+        description: 'کد فعالسازی به شماره همراه 09010901738 ارسال شد'
+      },
+      {
+        iconName : 'login/shield-security',
+        header: 'Choose a Password',
+        title: 'انتخاب کلمه عبور',
+        description: 'کلمه عبور شما باید ترکیبی از حروف کوچیک و بزرگ لاتین، اعداد، نشانه ها باشد'
+      },
+      {
+        iconName : 'login/message-edit',
+        header: 'Completion of information',
+        title: 'تکمیل اطلاعات',
+        description: 'برای ثبت نام اطلاعات خود را با صحت و درستی وارد نمایید'
+      },
+
+    ]
 </script>
 
 <style scoped>

@@ -7,7 +7,7 @@
 <div class="input-wrapper" dir="ltr">
     <label class="input-label" for="username">نام و نام خانوادگی</label>
     <input 
-    type="password" 
+    type="text" 
     name="username"
     id="username"
     class="input-field"
@@ -15,66 +15,66 @@
 </div>
 <div class="flex justify-between">
     <div class="input-wrapper" dir="ltr">
-    <label class="input-label" for="username">جنسیت</label>
+    <label class="input-label" for="username2">جنسیت</label>
     <input 
-    type="password" 
-    name="username"
-    id="username"
+    type="text" 
+    name="username2"
+    id="username2"
     class="input-field"
     />
 </div>
 <div class="input-wrapper" dir="ltr">
-    <label class="input-label" for="username">تاریخ تولد  </label>
+    <label class="input-label" for="username3">تاریخ تولد  </label>
     <input 
-    type="password" 
-    name="username"
-    id="username"
+    type="text" 
+    name="username3"
+    id="username3"
     class="input-field"
     />
 </div>
 </div>
 <div class="input-wrapper" dir="ltr">
-    <label class="input-label" for="username">شماره تماس </label>
+    <label class="input-label" for="username4">شماره تماس </label>
     <input 
-    type="password" 
-    name="username"
-    id="username"
+    type="text" 
+    name="username4"
+    id="username4"
     class="input-field"
     />
 </div>
 <div class="input-wrapper" dir="ltr">
-    <label class="input-label" for="username">ایمیل </label>
+    <label class="input-label" for="username5">ایمیل </label>
     <input 
-    type="password" 
-    name="username"
-    id="username"
+    type="text" 
+    name="username5"
+    id="username5"
     class="input-field"
     />
 </div>
 <div class="input-wrapper" dir="ltr">
-    <label class="input-label" for="username">نام مجموعه  </label>
+    <label class="input-label" for="username6">نام مجموعه  </label>
     <input 
-    type="password" 
-    name="username"
-    id="username"
+    type="text" 
+    name="username6"
+    id="username6"
     class="input-field"
     />
 </div>
 <div class="input-wrapper" dir="ltr">
-    <label class="input-label" for="username">شناسه شرکت </label>
+    <label class="input-label" for="username7">شناسه شرکت </label>
     <input 
-    type="password" 
-    name="username"
-    id="username"
+    type="text" 
+    name="username7"
+    id="username7"
     class="input-field"
     />
 </div>
 <div class="input-wrapper" dir="ltr">
-    <label class="input-label" for="username"> کلمه عبور</label>
+    <label class="input-label" for="username8"> کلمه عبور</label>
     <input 
-    type="password" 
-    name="username"
-    id="username"
+    type="text" 
+    name="username8"
+    id="username8"
     class="input-field"
     />
 </div>

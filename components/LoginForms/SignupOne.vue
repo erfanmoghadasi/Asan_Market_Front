@@ -18,13 +18,19 @@
 
 <!-- ------------------- BUTTONS -------------------- -->
     <div class="mt-14 flex items-center w-full gap-4">
-        <button class=" w-full c-btn bg-primary-orginal text-white">دریافت کد</button>
+        <button @click.prevent="handleChange" class=" w-full c-btn bg-primary-orginal text-white">دریافت کد</button>
     </div>
 </form>
 </div>
 </template>
 
 <script setup lang="ts">
+
+const emit = defineEmits(['change-page'])
+
+const handleChange = () => {
+    emit('change-page', 2)
+}
 
 </script>
 

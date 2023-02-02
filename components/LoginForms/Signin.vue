@@ -47,12 +47,20 @@
 <!-- ------------------- BUTTONS -------------------- -->
         <div class="mt-14 flex items-center w-full gap-4">
             <button class=" w-full c-btn bg-primary-orginal text-white">ورود</button>
-            <button class=" w-full c-btn text-primary-orginal">ثبت نام</button>
+            <button @click.prevent="handleChange" class=" w-full c-btn text-primary-orginal">ثبت نام</button>
         </div>
     </form>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+const emit = defineEmits(['change-page'])
+
+const handleChange = () => {
+    emit('change-page' , 1)
+}
+
+</script>
 
 <style scoped></style>
