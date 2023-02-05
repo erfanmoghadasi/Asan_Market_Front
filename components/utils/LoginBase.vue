@@ -71,7 +71,6 @@ const handleChange = () => {
     emit('change-page', 0)
 }
 
-const gradientClass = ref('step-one')
 const stepperBgHandler = computed(() => {
   switch(props.pageNumber){
     case 1 : 
