@@ -1,0 +1,57 @@
+<template>
+  <div class="w-full pb-44 px-44 flex items-center gap-6">
+    <div class="w-full h-[300px] rounded-[10px] bg-[#F5F5F5] flex">
+      <div class="flex flex-col justify-center gap-8 px-14">
+        <h4 class="font-black text-4xl">
+          فروش ویژه کنسول گیمینگ و محصولات اپل
+        </h4>
+        <p class="text-xl text-[#747474]">
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+        </p>
+        <button
+          class="flex items-center justify-center gap-2 rounded-[40px] w-32 h-12 font-bold text-xl text-white bg-gradient-to-tr from-[#76D2FF] to-[#0181C4]"
+        >
+          <span>مشاهده</span>
+          <NuxtIcon name="arrow-left" />
+        </button>
+      </div>
+      <nuxt-img
+        src="/images/box-category/iphone.png"
+        height="full"
+        width="full"
+        class="mx-8 my-5"
+      />
+    </div>
+    <div
+      class="w-full h-[300px] rounded-[10px] left-box flex items-center justify-between overflow-hidden"
+    >
+      <div class="flex flex-col justify-center gap-8 px-14">
+        <h4 class="font-black text-4xl">هندزفری بیسیم شـــــــارک</h4>
+        <p class="text-xl text-[#1E1E1E]">
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+        </p>
+        <button
+          class="flex items-center justify-center gap-2 rounded-[40px] w-32 h-12 font-bold text-xl text-white bg-gradient-to-tr from-[#76D2FF] to-[#0181C4]"
+        >
+          <span>مشاهده</span>
+          <NuxtIcon name="arrow-left" />
+        </button>
+      </div>
+      <nuxt-img src="/images/main/headphone.png" height="full" />
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts"></script>
+
+<style scoped>
+.left-box {
+  background: linear-gradient(
+    180deg,
+    #e3f4fe 0%,
+    #e1f3ff 33.22%,
+    #e3f4fe 59.8%,
+    #eaf4fe 100%
+  );
+}
+</style>

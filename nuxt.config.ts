@@ -4,6 +4,8 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "nuxt-icons",
     "nuxt-icon",
+    'nuxt-swiper',
+    '@nuxt/image-edge',
   ],
   app: {
     head: {
@@ -14,6 +16,6 @@ export default defineNuxtConfig({
     },
   },
   imports: {
-    dirs: ["layouts/**", "pages/**", "components/**", "assets/**"],
+    dirs: ["layouts/**", "pages/**", "components/**", "assets/**", 'static/**'],
   },
 });

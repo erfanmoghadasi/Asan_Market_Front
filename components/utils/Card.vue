@@ -1,0 +1,72 @@
+<template>
+  <div
+    class="bg-white w-[292px] h-[406px] p-6 pb-8 rounded-[10px] flex flex-col justify-between"
+  >
+    <nuxt-img :src="image" class="h-[160px] w-fit mx-auto" />
+    <div class="flex flex-col justify-between h-[100px] max-h-[100px]">
+      <p class="truncate font-medium text-sm text-gray-b4">{{ category }}</p>
+      <h6 class="font-bold text-gray-b2">{{ description }}</h6>
+      <div v-if="rate" class="flex items-center gap-1">
+        <NuxtIcon
+          name="card/star"
+          :class="rate > 4 ? 'text-yellow-400' : 'text-primary-w4'"
+        />
+        <NuxtIcon
+          name="card/star"
+          :class="rate > 3 ? 'text-yellow-400' : 'text-primary-w4'"
+        />
+        <NuxtIcon
+          name="card/star"
+          :class="rate > 2 ? 'text-yellow-400' : 'text-primary-w4'"
+        />
+        <NuxtIcon
+          name="card/star"
+          :class="rate > 1 ? 'text-yellow-400' : 'text-primary-w4'"
+        />
+        <NuxtIcon
+          name="card/star"
+          :class="rate > 0 ? 'text-yellow-400' : 'text-primary-w4'"
+        />
+      </div>
+    </div>
+    <div class="h-7 text-gray-b2 w-full flex items-center justify-between">
+      <span class="font-bold text-lg">{{ price }} تومان</span>
+      <NuxtIcon
+        name="card/heart"
+        class="text-2xl cursor-pointer"
+        :class="liked ? 'text-red-700' : 'text-white'"
+      />
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+const props = defineProps({
+  image: {
+    type: String,
+    require: false,
+  },
+  price: {
+    type: String,
+    require: true,
+  },
+  liked: {
+    type: Boolean,
+    require: true,
+  },
+  category: {
+    type: String,
+    require: true,
+  },
+  description: {
+    type: String,
+    require: true,
+  },
+  rate: {
+    type: Number,
+    require: true,
+  },
+});
+</script>
+
+<style scoped></style>

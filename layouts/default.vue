@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full">
+  <div class="w-full bg-white ">
     <nav
       @mouseover.self="isCategoryOpen = false"
-      class="fixed z-40 w-full h-24 px-7 flex items-center justify-between shadow-[0px_2px_20px_rgba(0,75,130,0.14)]"
+      class="fixed z-40 bg-white w-full h-24 px-7 flex items-center justify-between shadow-[0px_2px_20px_rgba(0,75,130,0.14)]"
     >
       <!-- ------------------ LOGO ------------------- -->
       <div
@@ -35,6 +35,7 @@
         <ul class="flex items-center justify-between gap-14 mx-6">
           <li
             v-for="item in navList"
+            :key="item.title"
             class="flex h-full items-center gap-3 cursor-pointer"
           >
             <span>
@@ -61,7 +62,7 @@
 
     <!-- ------------------------ CATEGORY LIST ------------------------------- -->
     <article
-      v-if="isCategoryOpen"
+      v-show="isCategoryOpen"
       class="w-full bg-gray-b4 bg-opacity-[60%] fixed top-24 z-30 h-screen"
     >
       <div
@@ -73,6 +74,7 @@
             <li
               class="flex items-center gap-3 cursor-pointer text-gray-b2"
               v-for="item in categoryList"
+              :key="item.title"
             >
               <span>
                 <NuxtIcon :name="item.iconName" filled class="text-2xl" />
@@ -84,7 +86,7 @@
         <div class="w-full"></div>
       </div>
     </article>
-    <div class="h-[700px]">
+    <div >
       <slot />
     </div>
     <LayoutFooter />
@@ -92,13 +94,14 @@
 </template>
 
 <script setup lang="ts">
+const isCategoryOpen = ref(false);
 const navList = ref([
   {
-    iconName: "layout/shop",
+    iconName: "layout/vector",
     title: "خانه",
   },
   {
-    iconName: "layout/vector",
+    iconName: "layout/shop",
     title: "فروشگاه",
   },
   {
@@ -118,8 +121,6 @@ const navList = ref([
     title: "درباره ما",
   },
 ]);
-
-const isCategoryOpen = ref(false);
 const categoryList = ref([
   {
     iconName: "layout/category/mobile",
@@ -154,6 +155,7 @@ const categoryList = ref([
     title: "تبلت و لپ تاپ",
   },
 ]);
+
 </script>
 
 <style scoped></style>
