@@ -1,0 +1,95 @@
+<template>
+    <div class="mt-44 mb-32 px-44 w-full flex flex-col  items-center">
+            <h3 class="font-bold text-3xl text-primary-b3 mb-24 ">دسته بندی های پر طرفدار</h3>
+            <div class="w-full flex flex-wrap justify-between gap-[70px] ">
+                <div 
+                v-for="product in products"
+                :class="product.bg"
+                class=" rounded-full mb-16 stone w-[189px] h-[189px] relative grid hover:scale-95 transition-all">
+                    <nuxt-img class="place-self-center scale-105 -translate-y-3" :src="product.image" />
+                    <p class="w-full text-center font-bold text-gray-b1 text-xl absolute -bottom-[45px]  ">{{ product.title }}</p>
+                </div>
+
+            </div>
+    </div>
+</template>
+
+<script setup lang="ts">
+    const products = ref([
+        {
+            image: 'images/most-fan/camera.png',
+            title: 'دوربین',
+            bg: 'stone'
+        },
+        {
+            image: 'images/most-fan/headphone.png',
+            title: 'هدفون و هندزفری',
+            bg: 'metal'
+        },
+        {
+            image: 'images/most-fan/flash.png',
+            title: 'فلش مموری',
+            bg: 'pink'
+        },
+        {
+            image: 'images/most-fan/iphone.png',
+            title: 'محصولات اپل ',
+            bg: 'green'
+        },
+        {
+            image: 'images/most-fan/laptop.png',
+            title: 'لوازم جانبی لپ تاپ',
+            bg: 'stone'
+        },
+        {
+            image: 'images/most-fan/tv.png',
+            title: 'لورم ایپسوم',
+            bg: 'pink'
+        },
+        {
+            image: 'images/most-fan/headphone.png',
+            title: 'هدفون و هندزفری',
+            bg: 'green'
+        },
+        {
+            image: 'images/most-fan/laptop.png',
+            title: 'لوازم جانبی لپ تاپ',
+            bg: 'pink'
+        },
+        {
+            image: 'images/most-fan/camera.png',
+            title: 'دوربین',
+            bg: 'stone'
+        },
+        {
+            image: 'images/most-fan/headphone.png',
+            title: 'هدفون و هندزفری',
+            bg: 'metal'
+        },
+        {
+            image: 'images/most-fan/flash.png',
+            title: 'فلش مموری',
+            bg: 'pink'
+        },
+        {
+            image: 'images/most-fan/laptop.png',
+            title: 'لوازم جانبی لپ تاپ',
+            bg: 'stone'
+        },
+    ])
+</script>
+
+<style scoped>
+    .stone{
+        background: linear-gradient(143.73deg, #E5EEEA 5.62%, #ECE8E3 99.35%);
+    }
+    .metal{
+        background: linear-gradient(143.73deg, #E5EEEA 5.62%, #ECE8E3 99.35%);
+    }
+    .pink{
+        background: linear-gradient(143.73deg, #FFDAD8 5.62%, #ECECE7 99.35%);
+    }
+    .green{
+        background: linear-gradient(143.73deg, #E1FFEB 5.62%, #D8E7FA 99.35%);
+    }
+</style>

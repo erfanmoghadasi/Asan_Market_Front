@@ -32,6 +32,7 @@
     <div class="h-7 text-gray-b2 w-full flex items-center justify-between">
       <span class="font-bold text-lg">{{ price }} تومان</span>
       <NuxtIcon
+        @click="likeHandler"
         name="card/heart"
         class="text-2xl cursor-pointer"
         :class="liked ? 'text-red-700' : 'text-white'"
@@ -67,6 +68,12 @@ const props = defineProps({
     require: true,
   },
 });
+
+const emit = defineEmits(['likeHandler'])
+
+const likeHandler = () => {
+  emit('likeHandler')
+}
 </script>
 
 <style scoped></style>

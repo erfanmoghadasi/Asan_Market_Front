@@ -16,6 +16,6 @@ export default defineNuxtConfig({
     },
   },
   imports: {
-    dirs: ["layouts/**", "pages/**", "components/**", "assets/**", 'static/**'],
-  },
+    dirs: ["layouts/**", "pages/**", "components/**", "assets/**"],
+  }
 });

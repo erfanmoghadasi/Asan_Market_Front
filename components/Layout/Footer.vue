@@ -119,12 +119,14 @@
             نماد اعتماد آسان مارکت
           </h6>
           <div class="flex gap-4">
-            <span
-              class="w-[96px] h-[128px] rounded-lg border border-[#D2D2D2] bg-white"
-            ></span>
-            <span
-              class="w-[96px] h-[128px] rounded-lg border border-[#D2D2D2] bg-white"
-            ></span>
+            <nuxt-img
+            src="images/footer/kasbokar.png"
+              class="w-[96px] h-[128px] rounded-lg border border-[#D2D2D2] bg-white p-3"
+            />
+            <nuxt-img
+            src="images/footer/rezi.png"
+              class="w-[96px] h-[128px] rounded-lg border border-[#D2D2D2] bg-white p-3"
+            />
           </div>
         </div>
       </div>
