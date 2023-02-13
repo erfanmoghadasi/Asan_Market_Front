@@ -58,39 +58,54 @@
         <!-- ----------------------------------- TABLE ---------------------------------- -->
         <table class="w-full my-8">
           <tr class="bg-gray-b8 h-11 border">
-            <th 
-            class="border"
-            v-for="item in columnsHeader" :key="item.name">{{ item.name }}</th>
+            <th class="border" v-for="item in columnsHeader" :key="item.name">
+              {{ item.name }}
+            </th>
           </tr>
-          <tr 
-          v-for="item in rowData" 
-          :key="item.id"
-          class="text-center h-14 border"
+          <tr
+            v-for="item in rowData"
+            :key="item.id"
+            class="text-center h-14 border"
           >
-            <td class="border"  >{{ item.id }}</td>
-            <td class="border"  >{{ item.productCode }}</td>
-            <td class="border"  >{{ item.productName }}</td>
-            <td class="border"  >{{ item.qty }}</td>
-            <td class="border"  >{{ item.unit }}</td>
-            <td class="border"  >{{ item.price }}</td>
-            <td class="border"  >{{ item.off }}</td>
-            <td class="border"  >{{ item.fee }}</td>
-            <td class="border"  ></td>
+            <td class="border">{{ item.id }}</td>
+            <td class="border">{{ item.productCode }}</td>
+            <td class="border">{{ item.productName }}</td>
+            <td class="border">{{ item.qty }}</td>
+            <td class="border">{{ item.unit }}</td>
+            <td class="border">{{ item.price }}</td>
+            <td class="border">{{ item.off }}</td>
+            <td class="border">{{ item.fee }}</td>
+            <td class="border"></td>
           </tr>
         </table>
       </main>
 
       <!-- --------------------------- FOOTER -------------------------------- -->
-      <footer class="w-full mt-8 flex items-center justify-between px-6 mb-10 ">
+      <footer class="w-full mt-8 flex items-center justify-between px-6 mb-10">
         <div class="flex items-center gap-8">
-            <button class="c-btn w-48 bg-primary-orginal font-medium text-lg text-white">ثبت و ارسال</button>
-            <button
+          <button
+            class="c-btn w-48 bg-primary-orginal font-medium text-lg text-white"
+          >
+            ثبت و ارسال
+          </button>
+          <button
             @click="closeModal"
-             class="c-btn w-48  font-medium text-lg text-primary-orginal ">انصراف</button>
+            class="c-btn w-48 font-medium text-lg text-primary-orginal"
+          >
+            انصراف
+          </button>
         </div>
         <div class="flex items-center gap-8">
-            <button class="c-btn w-80 border-gray-b4 text-gray-b4  font-medium text-lg ">Save PDF</button>
-            <button class="c-btn w-32 border-gray-b4 text-gray-b4  font-medium text-lg ">Save PDF</button>
+          <button
+            class="c-btn w-80 border-gray-b4 text-gray-b4 font-medium text-lg"
+          >
+            Save PDF
+          </button>
+          <button
+            class="c-btn w-32 border-gray-b4 text-gray-b4 font-medium text-lg"
+          >
+            Save PDF
+          </button>
         </div>
       </footer>
     </div>
@@ -98,11 +113,11 @@
 </template>
 
 <script setup lang="ts">
-const emits = defineEmits(['closeModal'])
+const emits = defineEmits(["closeModal"]);
 
 const closeModal = () => {
-    emits('closeModal')
-}
+  emits("closeModal");
+};
 
 const columnsHeader = ref([
   {
@@ -135,51 +150,47 @@ const columnsHeader = ref([
 ]);
 
 const rowData = ref([
-    {
-        id: 1,
-        productCode: '001700006',
-        productName: 'کابل AUX فنری PANATECH مدل P-A14 یکسر L',
-        qty: '4780',
-        unit: 'تعداد',
-        price: '259,880',
-        off: '0 %',
-        fee: '259,880',
-
-    },
-    {
-        id: 2,
-        productCode: '001700007',
-        productName: 'فلش مموری سامسونگ 16 گیگابایتی',
-        qty: '50',
-        unit: 'کارتن',
-        price: '119,880',
-        off: '5 %',
-        fee: '119,880',
-
-    },
-    {
-        id: 3,
-        productCode: '001700008',
-        productName: 'اپل واچ 2022 اس ای',
-        qty: '500',
-        unit: 'کارتن',
-        price: '187,880',
-        off: '15 %',
-        fee: '187,880',
-
-    },
-    {
-        id: 4,
-        productCode: '001700033',
-        productName: 'هارد اکسترنال ای دیتا مدل HD710 Pro ظرفیت 2 ترابایت',
-        qty: '25',
-        unit: 'تعداد',
-        price: '979,880',
-        off: '20 %',
-        fee: '979,880',
-
-    },
-])
+  {
+    id: 1,
+    productCode: "001700006",
+    productName: "کابل AUX فنری PANATECH مدل P-A14 یکسر L",
+    qty: "4780",
+    unit: "تعداد",
+    price: "259,880",
+    off: "0 %",
+    fee: "259,880",
+  },
+  {
+    id: 2,
+    productCode: "001700007",
+    productName: "فلش مموری سامسونگ 16 گیگابایتی",
+    qty: "50",
+    unit: "کارتن",
+    price: "119,880",
+    off: "5 %",
+    fee: "119,880",
+  },
+  {
+    id: 3,
+    productCode: "001700008",
+    productName: "اپل واچ 2022 اس ای",
+    qty: "500",
+    unit: "کارتن",
+    price: "187,880",
+    off: "15 %",
+    fee: "187,880",
+  },
+  {
+    id: 4,
+    productCode: "001700033",
+    productName: "هارد اکسترنال ای دیتا مدل HD710 Pro ظرفیت 2 ترابایت",
+    qty: "25",
+    unit: "تعداد",
+    price: "979,880",
+    off: "20 %",
+    fee: "979,880",
+  },
+]);
 </script>
 
 <style scoped></style>

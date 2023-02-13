@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-white w-[292px] h-[406px] p-6 pb-8 rounded-[10px] flex flex-col justify-between"
+    class="bg-white w-[292px] h-[406px] p-6 pb-8 rounded-[10px] flex flex-col justify-between card-shadow"
   >
     <nuxt-img :src="image" class="h-[160px] w-fit mx-auto" />
     <div class="flex flex-col justify-between h-[100px] max-h-[100px]">
@@ -76,4 +76,8 @@ const likeHandler = () => {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+  .card-shadow {
+    box-shadow: 0px 2px 20px #E5EEF5;
+  }
+</style>

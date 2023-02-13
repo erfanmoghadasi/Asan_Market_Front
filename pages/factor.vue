@@ -3,8 +3,6 @@
     <!-- ------------------------------- FINAL BILL MODAL -------------------------- -->
     <FactorBillModal @close-modal="isModalOpen = false" v-if="isModalOpen" />
 
-
-
     <div class="w-full max-w-[1558px] mb-32 mx-auto">
       <div
         class="relative flex w-full items-center justify-start gap-14 pb-7 mb-6 border-b-2 border-gray-b7"
