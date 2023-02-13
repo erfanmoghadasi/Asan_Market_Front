@@ -29,7 +29,7 @@
                 </template>
                 <template #fallback>
                     <div class="w-full flex flex-wrap gap-6 justify-around pl-6 ">
-                        <UtilsSkeletonCard v-for="s in skeleton" />
+                        <UtilsSkeletonCard v-for="s in Array(10)" />
                     </div>
                 </template>
             </Suspense>
@@ -39,7 +39,6 @@
 </template>
 
 <script setup lang="ts">
-    const skeleton = ref(Array(10))
     const sortBy = ref([
         {
             title: 'مرتبط ترین',
