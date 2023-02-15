@@ -5,7 +5,10 @@
       class="fixed z-40 bg-white w-full h-24 px-7 flex items-center justify-between shadow-[0px_2px_20px_rgba(0,75,130,0.14)]"
     >
       <!-- ------------------ LOGO ------------------- -->
+      <NuxtLink to="/">
+
       <div
+      
         class="flex gap-3 h-full items-center text-primary-orginal cursor-pointer"
       >
         <span class="flex items-center max-h-10">
@@ -17,6 +20,7 @@
             class="text-[188px] translate-y-2"
         /></span>
       </div>
+    </NuxtLink>
 
       <!-- ------------------ MIDDLE SECTION ------------------- -->
       <div class="min-w-max h-full flex items-center">
@@ -77,7 +81,7 @@
               :key="item.title"
             >
               <span>
-                <NuxtIcon :name="item.iconName" filled class="text-2xl" />
+                <NuxtIcon :name="item.iconName"  class="text-2xl" />
               </span>
               <p class="font-medium text-lg">{{ item.title }}</p>
             </li>

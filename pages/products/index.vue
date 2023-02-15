@@ -1,4 +1,5 @@
 <template>
+    <div>
     <div class="pt-[145px] flex justify-between">
         <p class="font-bold text-[#999999] pr-4">فروشگاه آسان مارکت / کامپیوتر / سخت افزار و قطعات / رم ram    </p>
         <p class="font-bold text-[#333333] pl-4">موجودی: 65,000,000 تومان</p>
@@ -29,13 +30,14 @@
                 </template>
                 <template #fallback>
                     <div class="w-full flex flex-wrap gap-6 justify-around pl-6 ">
-                        <UtilsSkeletonCard v-for="s in Array(10)" />
+                        <UtilsSkeletonCard v-for="s in 10" />
                     </div>
                 </template>
             </Suspense>
         </ClientOnly>
         </div>
     </div>
+</div>
 </template>
 
 <script setup lang="ts">

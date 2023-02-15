@@ -14,8 +14,9 @@ export default defineNuxtConfig({
         lang: "fa",
       },
     },
+    pageTransition: { name: 'page', mode: 'out-in' }
   },
   imports: {
     dirs: ["layouts/**", "pages/**", "components/**", "assets/**"],
-  }
+  },
 });
