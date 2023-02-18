@@ -66,8 +66,8 @@
       <div class="">
         <MagazineMostFav />
         <div class="flex min-h-fit justify-between flex-col gap-6">
+          <nuxt-img class="rounded-[10px]" src="images/magazine/ad.png" />
           <nuxt-img class="rounded-[10px]" src="images/magazine/ad1.png" />
-          <nuxt-img class="rounded-[10px]" src="images/magazine/ad2.png" />
         </div>
       </div>
     </div>

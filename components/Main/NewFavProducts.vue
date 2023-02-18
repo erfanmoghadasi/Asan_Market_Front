@@ -23,13 +23,13 @@
         name="swiper/arrow-circle-right"
         filled
         class="text-[40px] absolute top-[50%] -right-20 cursor-pointer"
-        @click="nextSlideHandler"
+
       />
       <NuxtIcon
         name="swiper/arrow-circle-left"
         filled
         class="text-[40px] absolute top-[50%] -left-10 cursor-pointer"
-        @click="nextSlideHandler"
+
       />
     </div>
 
@@ -58,13 +58,13 @@
         name="swiper/arrow-circle-right"
         filled
         class="text-[40px] absolute top-[50%] -right-20 cursor-pointer"
-        @click="nextSlideHandler"
+
       />
       <NuxtIcon
         name="swiper/arrow-circle-left"
         filled
         class="text-[40px] absolute top-[50%] -left-10 cursor-pointer"
-        @click="nextSlideHandler"
+
       />
     </div>
 
@@ -72,7 +72,6 @@
 </template>
 
 <script setup lang="ts">
-import { useSwiper } from 'swiper/vue';
 
 const newProducts = ref([
   {
@@ -122,10 +121,7 @@ const newProducts = ref([
   },
 ]);
 
-const swip = useSwiper();
-const nextSlideHandler = () => {
-    console.log(swip)
-}
+
 </script>
 
 <style scoped></style>
