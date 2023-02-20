@@ -51,7 +51,9 @@
         <span class="w-2 h-8 bg-primary-orginal rounded-full" />
         <h4 class="font-bold text-xl text-primary-orginal">توضیحات</h4>
       </div>
-      <p class="w-[914px] max-h-[578px] overflow-y-auto pl-6  text-xl leading-9 text-[#595959]">
+      <p
+        class="w-[914px] max-h-[578px] overflow-y-auto pl-6 text-xl leading-9 text-[#595959]"
+      >
         این ساعت طراحی ظریف و زیبایی دارد. فرم صفحه این مدل دایره‌ای بوده و برای
         شما که ساعت گرد را به ساعت‌های مستطیلی ترجیح می‌دهید بسیار جذاب
         خواهدبود. در سمت راست ساعت دو عدد دکمه فیزیکی وجود دارد و اگر به

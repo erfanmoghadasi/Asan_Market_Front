@@ -105,13 +105,13 @@
 
     <!-- ----------------------------- NEWS ------------------------ -->
     <div class="w-full text-gray-b2 font-bold mb-28">
-        <h6 class="text-2xl   mb-14">مقالات و اخبار مرتبط</h6>
-        <div class="flex items-center justify-between gap-6 ">
-            <div v-for="news in newsList" class="w-[292px] h-[372px]">
-                <nuxt-img :src="news.image" />
-                <p class="leading-8 mt-4">{{ news.title }}</p>
-            </div>
+      <h6 class="text-2xl mb-14">مقالات و اخبار مرتبط</h6>
+      <div class="flex items-center justify-between gap-6">
+        <div v-for="news in newsList" class="w-[292px] h-[372px]">
+          <nuxt-img :src="news.image" />
+          <p class="leading-8 mt-4">{{ news.title }}</p>
         </div>
+      </div>
     </div>
   </div>
 </template>
@@ -121,27 +121,28 @@ const route = useRoute();
 const id = route.params.id;
 
 const newsList = ref([
-    {
-        image: 'images/magazine/news1.png',
-        title: 'سامسونگ در رویداد آنپک چهارشنبه از چه محصولاتی رونمایی خواهد کرد؟'
-    },
-    {
-        image: 'images/magazine/news2.png',
-        title: 'سامسونگ در گلکسی S24 از تراشه اگزینوس 2400 استفاده می‌کند'
-    },
-    {
-        image: 'images/magazine/news3.png',
-        title: 'تصاویر تبلیغاتی اسنپدراگون 8 نسل 2 در سری گلکسی S23  '
-    },
-    {
-        image: 'images/magazine/news4.png',
-        title: 'مشخصات و تصاویر گلکسی بوک 3 پرو و 3 پرو 360 افشا شد'
-    },
-    {
-        image: 'images/magazine/news5.png',
-        title: 'سامسونگ از اولین مانیتور Mini-LED تخت خود، Odyssey Neo G7 رونمایی کرد '
-    },
-])
+  {
+    image: "images/magazine/news1.png",
+    title: "سامسونگ در رویداد آنپک چهارشنبه از چه محصولاتی رونمایی خواهد کرد؟",
+  },
+  {
+    image: "images/magazine/news2.png",
+    title: "سامسونگ در گلکسی S24 از تراشه اگزینوس 2400 استفاده می‌کند",
+  },
+  {
+    image: "images/magazine/news3.png",
+    title: "تصاویر تبلیغاتی اسنپدراگون 8 نسل 2 در سری گلکسی S23  ",
+  },
+  {
+    image: "images/magazine/news4.png",
+    title: "مشخصات و تصاویر گلکسی بوک 3 پرو و 3 پرو 360 افشا شد",
+  },
+  {
+    image: "images/magazine/news5.png",
+    title:
+      "سامسونگ از اولین مانیتور Mini-LED تخت خود، Odyssey Neo G7 رونمایی کرد ",
+  },
+]);
 </script>
 
 <style scoped></style>

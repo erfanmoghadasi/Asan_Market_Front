@@ -1,14 +1,19 @@
 <template>
-  <div class="mx-44 my-20 px-6 h-[454px] bg-gray-b8 rounded-2xl flex items-center justify-between">
-    <div class=" w-[350px] mx-auto ">
+  <div
+    class="mx-44 my-20 px-6 h-[454px] bg-gray-b8 rounded-2xl flex items-center justify-between"
+  >
+    <div class="w-[350px] mx-auto">
       <div class="gift-cart w-44 mx-auto relative z-20">
-        <p class="font-black text-3xl text-primary-b4 leading-[50px]">پیشنهادهای شگفت انگیز 
+        <p class="font-black text-3xl text-primary-b4 leading-[50px]">
+          پیشنهادهای شگفت انگیز
           <span class="text-primary-orginal">آسان مارکت</span>
         </p>
         <nuxt-img src="images/main/gift.png" />
       </div>
     </div>
-    <div class="cart-box overflow-hidden flex justify-between gap-6 px-6 rounded-xl w-full select-none">
+    <div
+      class="cart-box overflow-hidden flex justify-between gap-6 px-6 rounded-xl w-full select-none"
+    >
       <UtilsCard
         v-for="card in cardsList"
         :key="card.id"
@@ -66,10 +71,10 @@ const cardsList = ref([
 </script>
 
 <style scoped>
-  .cart-box {
-    box-shadow: -25px 0px 23px -15px #00000040, 25px 0px 23px -15px #00000040;
-  }
-  .gift-cart{
-    z-index: 10;
-  }
+.cart-box {
+  box-shadow: -25px 0px 23px -15px #00000040, 25px 0px 23px -15px #00000040;
+}
+.gift-cart {
+  z-index: 10;
+}
 </style>

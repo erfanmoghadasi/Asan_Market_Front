@@ -69,15 +69,15 @@ const props = defineProps({
   },
 });
 
-const emit = defineEmits(['likeHandler'])
+const emit = defineEmits(["likeHandler"]);
 
 const likeHandler = () => {
-  emit('likeHandler')
-}
+  emit("likeHandler");
+};
 </script>
 
 <style scoped>
-  .card-shadow {
-    box-shadow: 0px 2px 20px #E5EEF5;
-  }
+.card-shadow {
+  box-shadow: 0px 2px 20px #e5eef5;
+}
 </style>

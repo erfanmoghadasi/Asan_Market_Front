@@ -1,24 +1,26 @@
 <template>
-    <div class="w-full mb-12">
-        <h3 class="font-bold text-3xl text-primary-b3 text-center mb-16">محصولات مشابه</h3>
-        <div class="flex justify-center gap-6">
-        <div v-for="card in newProducts" :key="card.id">
-          <UtilsCard
-            :image="card.image"
-            :category="card.category"
-            :description="card.description"
-            :rate="card.rate"
-            :price="card.price"
-            :liked="card.liked"
-            @like-handler="() => card.liked = !card.liked"
-          />
-        </div>
+  <div class="w-full mb-12">
+    <h3 class="font-bold text-3xl text-primary-b3 text-center mb-16">
+      محصولات مشابه
+    </h3>
+    <div class="flex justify-center gap-6">
+      <div v-for="card in newProducts" :key="card.id">
+        <UtilsCard
+          :image="card.image"
+          :category="card.category"
+          :description="card.description"
+          :rate="card.rate"
+          :price="card.price"
+          :liked="card.liked"
+          @like-handler="() => (card.liked = !card.liked)"
+        />
+      </div>
     </div>
-    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-    const newProducts = ref([
+const newProducts = ref([
   {
     id: 1,
     image: "images/products/memory1.png",
@@ -67,6 +69,4 @@
 ]);
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

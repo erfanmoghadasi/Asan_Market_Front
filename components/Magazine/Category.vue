@@ -1,7 +1,7 @@
 <template>
   <div
-  v-for="item in categoryList"
-  @click="handleCategory"
+    v-for="item in categoryList"
+    @click="handleCategory"
     class="cursor-pointer w-full bg-[#F8F8F8] h-14 rounded-[10px] flex items-center justify-between px-4 hover:shadow transition-all"
   >
     <p class="font-medium text-xl text-[#8C8C8C]">{{ item.title }}</p>
@@ -46,13 +46,14 @@ const categoryList = ref([
   },
 ]);
 
-const handleCategory = (e : any) => [
-    categoryList.value.forEach((item) => {
-        item.isClicked = false;
-        item.title === e.target.innerText ? item.isClicked = true : item.isClicked = false
-    })
-]
-
+const handleCategory = (e: any) => [
+  categoryList.value.forEach((item) => {
+    item.isClicked = false;
+    item.title === e.target.innerText
+      ? (item.isClicked = true)
+      : (item.isClicked = false);
+  }),
+];
 </script>
 
 <style scoped></style>

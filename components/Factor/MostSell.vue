@@ -1,8 +1,13 @@
 <template>
-    <div class="w-full max-w-[1558px]">
-        <div class="relative w-full flex flex-col">
-      <h4 class="font-bold text-3xl text-primary-b3 text-center py-16">خریداران این محصولات را خریده اند</h4>
-      <swiper class="mt-12  w-full flex items-center justify-between" :slides-per-view="5" >
+  <div class="w-full max-w-[1558px]">
+    <div class="relative w-full flex flex-col">
+      <h4 class="font-bold text-3xl text-primary-b3 text-center py-16">
+        خریداران این محصولات را خریده اند
+      </h4>
+      <swiper
+        class="mt-12 w-full flex items-center justify-between"
+        :slides-per-view="5"
+      >
         <swiper-slide v-for="card in newProducts" :key="card.id">
           <UtilsCard
             :image="card.image"
@@ -18,11 +23,11 @@
 
       <MainWeekFav />
     </div>
-    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-    const newProducts = ref([
+const newProducts = ref([
   {
     id: 1,
     image: "images/products/memory1.png",
@@ -71,6 +76,4 @@
 ]);
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

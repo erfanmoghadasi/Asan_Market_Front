@@ -2,22 +2,19 @@
   <div class="mx-44 my-20 flex items-center justify-between relative">
     <div
       v-for="post in reviews"
-      :style="{ backgroundImage: `url(${post.bgImg})`}"
+      :style="{ backgroundImage: `url(${post.bgImg})` }"
       class="post w-[292px] h-[224px]"
       :key="post.id"
     >
-      <div
-        class="flex w-full h-full items-end justify-between p-6 text-white"
-      >
-        <p class=" font-black text-xl ">{{ post.title }}</p>
-        <NuxtIcon class=" text-xl " name="main/arrow-left-circle" />
+      <div class="flex w-full h-full items-end justify-between p-6 text-white">
+        <p class="font-black text-xl">{{ post.title }}</p>
+        <NuxtIcon class="text-xl" name="main/arrow-left-circle" />
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-
 const reviews = ref([
   {
     id: 1,
@@ -48,7 +45,11 @@ const reviews = ref([
 </script>
 
 <style scoped>
-    .post{
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 43.02%, rgba(0, 0, 0, 0.67) 100%);
-    }
+.post {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 43.02%,
+    rgba(0, 0, 0, 0.67) 100%
+  );
+}
 </style>

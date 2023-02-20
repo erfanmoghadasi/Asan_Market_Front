@@ -66,8 +66,8 @@
             </div>
           </div>
           <button
-            @click="isModalOpen = true"
-            class=" c-btn-primary w-full font-bold text-xl"
+            @click="() => (isModalOpen = true)"
+            class="c-btn-primary w-full font-bold text-xl"
           >
             ثبت و مشاهده پیش فاکتور
           </button>

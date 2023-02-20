@@ -26,7 +26,10 @@
             </li>
             <ul class="mr-4">
               <div>
-                <li @click="isMenuOpen = !isMenuOpen" class="list-item border-b border-[#EBEBEB]">
+                <li
+                  @click="isMenuOpen = !isMenuOpen"
+                  class="list-item border-b border-[#EBEBEB]"
+                >
                   <NuxtIcon filled name="filter/arrow-down" />
                   <span>سخت افزار و قطعات</span>
                 </li>
@@ -82,27 +85,32 @@
     </div>
     <!-- ----------------------- PRICE RANGE ----------------------- -->
     <div class="list-section">
-    <div class="list-item justify-between">
+      <div class="list-item justify-between">
         <span>محدوده قیمت</span>
         <NuxtIcon filled name="filter/arrow-down" />
-    </div>
-    <div class="list-item">
+      </div>
+      <div class="list-item">
         <span>از</span>
-        <input type="text" class="outline-none text-center border-b-2 border-[#EBEBEB] w-40">
+        <input
+          type="text"
+          class="outline-none text-center border-b-2 border-[#EBEBEB] w-40"
+        />
         <span>تومان</span>
-    </div>
-    <div class="list-item">
+      </div>
+      <div class="list-item">
         <span>تا</span>
-        <input type="text" class="outline-none text-center border-b-2 border-[#EBEBEB] w-40">
+        <input
+          type="text"
+          class="outline-none text-center border-b-2 border-[#EBEBEB] w-40"
+        />
         <span>تومان</span>
-    </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-    const isMenuOpen = ref(false)
-    
+const isMenuOpen = ref(false);
 </script>
 
 <style scoped>

@@ -61,10 +61,14 @@
     </div>
     <!-- ------------------- BUTTONS -------------------- -->
     <div class="mt-14 flex items-center w-full gap-4 justify-center">
-      <button @click.prevent="handleChange" class="w-full c-btn-primary">بعدی</button>
+      <button @click.prevent="handleChange" class="w-full c-btn-primary">
+        بعدی
+      </button>
     </div>
 
-    <div class="flex items-center justify-center gap-2 font-semibold text-sm mt-6">
+    <div
+      class="flex items-center justify-center gap-2 font-semibold text-sm mt-6"
+    >
       <span class="text-gray-b5">کد فعالسازی را دریافت نکردید؟</span>
       <span class="text-[#288BFF] cursor-pointer">دوباره امتحان کنید</span>
     </div>
@@ -72,11 +76,11 @@
 </template>
 
 <script setup lang="ts">
-const emit = defineEmits(['change-page'])
+const emit = defineEmits(["change-page"]);
 
 const handleChange = () => {
-    emit('change-page' , 3)
-}
+  emit("change-page", 3);
+};
 </script>
 
 <style scoped></style>

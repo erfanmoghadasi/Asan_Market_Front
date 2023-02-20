@@ -1,26 +1,24 @@
 <template>
-  <div class="w-full bg-white ">
+  <div class="w-full bg-white">
     <nav
       @mouseover.self="isCategoryOpen = false"
       class="fixed z-40 bg-white w-full h-24 px-7 flex items-center justify-between shadow-[0px_2px_20px_rgba(0,75,130,0.14)]"
     >
       <!-- ------------------ LOGO ------------------- -->
       <NuxtLink to="/">
-
-      <div
-      
-        class="flex gap-3 h-full items-center text-primary-orginal cursor-pointer"
-      >
-        <span class="flex items-center max-h-10">
-          <NuxtIcon name="layout/nav-logo" class="text-5xl"
-        /></span>
-        <span class="max-h-10 flex items-center">
-          <NuxtIcon
-            name="layout/asan-market"
-            class="text-[188px] translate-y-2"
-        /></span>
-      </div>
-    </NuxtLink>
+        <div
+          class="flex gap-3 h-full items-center text-primary-orginal cursor-pointer"
+        >
+          <span class="flex items-center max-h-10">
+            <NuxtIcon name="layout/nav-logo" class="text-5xl"
+          /></span>
+          <span class="max-h-10 flex items-center">
+            <NuxtIcon
+              name="layout/asan-market"
+              class="text-[188px] translate-y-2"
+          /></span>
+        </div>
+      </NuxtLink>
 
       <!-- ------------------ MIDDLE SECTION ------------------- -->
       <div class="min-w-max h-full flex items-center">
@@ -81,7 +79,7 @@
               :key="item.title"
             >
               <span>
-                <NuxtIcon :name="item.iconName"  class="text-2xl" />
+                <NuxtIcon :name="item.iconName" class="text-2xl" />
               </span>
               <p class="font-medium text-lg">{{ item.title }}</p>
             </li>
@@ -90,7 +88,7 @@
         <div class="w-full"></div>
       </div>
     </article>
-    <div >
+    <div>
       <slot />
     </div>
     <LayoutFooter />
@@ -159,7 +157,6 @@ const categoryList = ref([
     title: "تبلت و لپ تاپ",
   },
 ]);
-
 </script>
 
 <style scoped></style>

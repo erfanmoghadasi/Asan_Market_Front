@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full flex flex-wrap gap-6 justify-around pl-6">
+  <div class="w-full flex gap-6 flex-wrap">
     <UtilsCard
-      v-for="card in userData"
+      v-for="card in favProducts"
       :image="card.image"
       :category="card.category"
       :description="card.description"
@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-const newProducts = ref([
+const favProducts = ref([
   {
     id: 1,
     image: "images/products/memory1.png",
@@ -106,15 +106,6 @@ const newProducts = ref([
     liked: false,
   },
 ]);
-const loadUserData = async () => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(newProducts.value);
-    }, 4000);
-  });
-};
-
-const userData: any = ref(await loadUserData());
 </script>
 
 <style scoped></style>

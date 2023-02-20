@@ -17,33 +17,33 @@
     </div>
 
     <h2 class="font-bold text-2xl text-gray-b1 mb-8">ویژگی های کلیدی</h2>
-      <ul class="flex flex-col gap-7">
-        <li class="font-medium text-lg text-gray-b4 flex items-center gap-3">
-          <span class="w-2 h-2 bg-gray-b4 rounded-full"/>
-          <span>جنس بند :</span>
-          <span class=" text-gray-b2">سیلیکون</span>
-        </li>
-        <li class="font-medium text-lg text-gray-b4 flex items-center gap-3">
-          <span class="w-2 h-2 bg-gray-b4 rounded-full"/>
-          <span>نوع کاربری:</span>
-          <span class=" text-gray-b2">رسمی، روزمره، ورزشی</span>
-        </li>
-        <li class="font-medium text-lg text-gray-b4 flex items-center gap-3">
-          <span class="w-2 h-2 bg-gray-b4 rounded-full"/>
-          <span>فرم صفحه:</span>
-          <span class=" text-gray-b2">دایره</span>
-        </li>
-        <li class="font-medium text-lg text-gray-b4 flex items-center gap-3">
-          <span class="w-2 h-2 bg-gray-b4 rounded-full"/>
-          <span>:GPS</span>
-          <span class=" text-gray-b2">دارد</span>
-        </li>
-        <li class="font-medium text-lg text-gray-b4 flex items-center gap-3">
-          <span class="w-2 h-2 bg-gray-b4 rounded-full"/>
-          <span>حافظه:</span>
-          <span class=" text-gray-b2">2 گیگابایت</span>
-        </li>
-      </ul>
+    <ul class="flex flex-col gap-7">
+      <li class="font-medium text-lg text-gray-b4 flex items-center gap-3">
+        <span class="w-2 h-2 bg-gray-b4 rounded-full" />
+        <span>جنس بند :</span>
+        <span class="text-gray-b2">سیلیکون</span>
+      </li>
+      <li class="font-medium text-lg text-gray-b4 flex items-center gap-3">
+        <span class="w-2 h-2 bg-gray-b4 rounded-full" />
+        <span>نوع کاربری:</span>
+        <span class="text-gray-b2">رسمی، روزمره، ورزشی</span>
+      </li>
+      <li class="font-medium text-lg text-gray-b4 flex items-center gap-3">
+        <span class="w-2 h-2 bg-gray-b4 rounded-full" />
+        <span>فرم صفحه:</span>
+        <span class="text-gray-b2">دایره</span>
+      </li>
+      <li class="font-medium text-lg text-gray-b4 flex items-center gap-3">
+        <span class="w-2 h-2 bg-gray-b4 rounded-full" />
+        <span>:GPS</span>
+        <span class="text-gray-b2">دارد</span>
+      </li>
+      <li class="font-medium text-lg text-gray-b4 flex items-center gap-3">
+        <span class="w-2 h-2 bg-gray-b4 rounded-full" />
+        <span>حافظه:</span>
+        <span class="text-gray-b2">2 گیگابایت</span>
+      </li>
+    </ul>
   </div>
 </template>
 

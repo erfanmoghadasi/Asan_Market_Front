@@ -1,5 +1,5 @@
 <template>
-<footer
+  <footer
     class="bg-[#F5F5F5] h-[700px] px-[184px] flex items-center justify-between"
   >
     <!-- ---------------------RIGHT FOOETR---------------------------------- -->
@@ -66,7 +66,9 @@
               class="w-[344px] h-12 rounded-lg bg-gray-b7 placeholder:absolute placeholder:right-6 placeholder:top-3 placeholder:text-gray-b3 focus:pl-6"
               dir="ltr"
             />
-            <button class="c-btn-primary hover:bg-transparent w-[72px] h-12 bg-primary-orginal text-white">
+            <button
+              class="c-btn-primary hover:bg-transparent w-[72px] h-12 bg-primary-orginal text-white"
+            >
               ثبت
             </button>
           </div>
@@ -120,11 +122,11 @@
           </h6>
           <div class="flex gap-4">
             <nuxt-img
-            src="images/footer/kasbokar.png"
+              src="images/footer/kasbokar.png"
               class="w-[96px] h-[128px] rounded-lg border border-[#D2D2D2] bg-white p-3"
             />
             <nuxt-img
-            src="images/footer/rezi.png"
+              src="images/footer/rezi.png"
               class="w-[96px] h-[128px] rounded-lg border border-[#D2D2D2] bg-white p-3"
             />
           </div>
