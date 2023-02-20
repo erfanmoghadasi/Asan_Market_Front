@@ -61,7 +61,7 @@
     </div>
     <!-- ------------------- BUTTONS -------------------- -->
     <div class="mt-14 flex items-center w-full gap-4 justify-center">
-      <button @click.prevent="handleChange" class="w-full c-btn bg-primary-orginal text-white">بعدی</button>
+      <button @click.prevent="handleChange" class="w-full c-btn-primary">بعدی</button>
     </div>
 
     <div class="flex items-center justify-center gap-2 font-semibold text-sm mt-6">

@@ -66,7 +66,7 @@
               class="w-[344px] h-12 rounded-lg bg-gray-b7 placeholder:absolute placeholder:right-6 placeholder:top-3 placeholder:text-gray-b3 focus:pl-6"
               dir="ltr"
             />
-            <button class="c-btn w-[72px] h-12 bg-primary-orginal text-white">
+            <button class="c-btn-primary hover:bg-transparent w-[72px] h-12 bg-primary-orginal text-white">
               ثبت
             </button>
           </div>

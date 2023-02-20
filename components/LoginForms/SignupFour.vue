@@ -82,7 +82,7 @@
 
 <!-- ------------------- BUTTONS -------------------- -->
 <div class="mt-14 flex items-center w-full gap-4">
-    <button class=" w-full c-btn bg-primary-orginal text-white">تکمیل اطلاعات</button>
+    <button class=" w-full c-btn-primary">تکمیل اطلاعات</button>
 </div>
 </form>
 </div>

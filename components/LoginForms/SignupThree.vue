@@ -27,7 +27,7 @@
 
 <!-- ------------------- BUTTONS -------------------- -->
 <div class="mt-14 flex items-center w-full gap-4">
-    <button @click.prevent="handleChange" class=" w-full c-btn bg-primary-orginal text-white">بعدی</button>
+    <button @click.prevent="handleChange" class=" w-full c-btn-primary bg-primary-orginal text-white">بعدی</button>
 </div>
 </form>
 </div>

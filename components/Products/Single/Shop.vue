@@ -51,7 +51,7 @@
                 <p class="font-medium text-gray-b4 text-lg">قیمت برای شما: (هرکارتن)</p>
                 <span class="font-bold text-gray-b2 text-2xl">580,000</span>
             </div>
-            <button class="c-btn w-full bg-primary-orginal font-bold text-xl">افزودن به سبد</button>
+            <button class="c-btn-primary w-full  font-bold text-xl">افزودن به سبد</button>
         </div>
 </template>
 

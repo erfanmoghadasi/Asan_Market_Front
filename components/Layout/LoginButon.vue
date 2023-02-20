@@ -1,6 +1,6 @@
 <template>
       <div
-        class="c-btn flex items-center px-3 w-[177px] h-12 bg-primary-orginal"
+        class="c-btn  hover:scale-95 hover:border-primary-w4 transition-all flex items-center px-3 w-[177px] h-12 bg-primary-orginal"
       >
         <span>
           <NuxtIcon name="layout/login" filled class="text-2xl" />

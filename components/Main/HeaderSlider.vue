@@ -10,7 +10,7 @@
           <h3 class="font-black text-5xl leading-[60px]">{{ slide.title }}</h3>
           <p class="font-light text-xl">{{ slide.description }}</p>
           <button
-            class="c-btn bg-white w-44 h-14 text-primary-orginal text-xl font-bold"
+            class="c-btn-white bg-white w-44 h-14 text-primary-orginal text-xl font-bold"
           >
             {{ slide.buttonTitle }}
           </button>

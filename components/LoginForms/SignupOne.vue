@@ -18,7 +18,7 @@
 
 <!-- ------------------- BUTTONS -------------------- -->
     <div class="mt-14 flex items-center w-full gap-4">
-        <button @click.prevent="handleChange" class=" w-full c-btn bg-primary-orginal text-white">دریافت کد</button>
+        <button @click.prevent="handleChange" class=" w-full c-btn-primary">دریافت کد</button>
     </div>
 </form>
 </div>

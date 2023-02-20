@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* scrollbar */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #a51313;
+  }
+  
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+  }
+
+  /* *::-webkit-scrollbar-track {
+    background-color: #a51313;
+
+  } */
+
+  *::-webkit-scrollbar-thumb{
+    background-color: #E5E5E5;
+    border-radius: 20px;
+  }
+  
+
+
 @font-face {
     font-family: "vazir";
     src: url('assets/fonts/Vazir.ttf')  format('truetype')
@@ -23,6 +48,12 @@ html {
     }
     .c-btn {
         @apply h-14 cursor-pointer border border-primary-orginal rounded-[10px] text-sm font-medium
+    }
+    .c-btn-primary {
+        @apply h-14 cursor-pointer border border-primary-orginal rounded-[10px] text-sm font-medium bg-primary-orginal text-white hover:text-primary-orginal hover:bg-white transition-all
+    }
+    .c-btn-white {
+        @apply h-14 cursor-pointer border border-primary-orginal rounded-[10px] text-sm font-medium bg-white text-primary-orginal hover:text-white hover:bg-primary-orginal transition-all
     }
 }
 
