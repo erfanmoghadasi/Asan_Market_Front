@@ -5,7 +5,16 @@
       :pageNumber="pageNumber"
       @change-page="changePage"
     >
+    <Transition
+        appear
+        mode="out-in"
+        enter-from-class="opacity-0 -translate-x-3"
+        enter-active-class="transition duration-[200ms]"
+        leave-to-class="opacity-0 "
+        leav-active-class="transition duration-[200ms]"
+      >
       <component :is="componentsContent" @change-page="changePage" />
+      </Transition>
     </UtilsLoginBase>
   </div>
 </template>

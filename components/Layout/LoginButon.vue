@@ -1,4 +1,5 @@
 <template>
+  <NuxtLink to="/login">
   <div
     class="c-btn hover:scale-95 hover:border-primary-w4 transition-all flex items-center px-3 w-[177px] h-12 bg-primary-orginal"
   >
@@ -11,4 +12,5 @@
       <span>ثبت نام</span>
     </p>
   </div>
+</NuxtLink>
 </template>

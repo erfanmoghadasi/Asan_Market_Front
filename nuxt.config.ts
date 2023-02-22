@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     "nuxt-icon",
     'nuxt-swiper',
     '@nuxt/image-edge',
+    'nuxt-headlessui'
   ],
   app: {
     head: {

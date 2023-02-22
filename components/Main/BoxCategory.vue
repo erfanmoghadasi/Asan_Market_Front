@@ -5,7 +5,7 @@
       v-for="item in boxList"
     >
       <nuxt-img
-        class="mx-auto -translate-y-8"
+        class="mx-auto -translate-y-8 transition-all hover:-translate-y-10"
         :src="`/images/box-category/${item.image}.png`"
       />
       <p

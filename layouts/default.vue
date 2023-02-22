@@ -1,13 +1,13 @@
 <template>
   <div class="w-full bg-white">
     <nav
-      @mouseover.self="isCategoryOpen = false"
+      @mouseover.self="() => isCategoryOpen = false"
       class="fixed z-40 bg-white w-full h-24 px-7 flex items-center justify-between shadow-[0px_2px_20px_rgba(0,75,130,0.14)]"
     >
       <!-- ------------------ LOGO ------------------- -->
-      <NuxtLink to="/">
+      <NuxtLink class="h-full" to="/">
         <div
-          class="flex gap-3 h-full items-center text-primary-orginal cursor-pointer"
+          class="flex overflow-hidden gap-3 h-full items-center text-primary-orginal cursor-pointer"
         >
           <span class="flex items-center max-h-10">
             <NuxtIcon name="layout/nav-logo" class="text-5xl"
@@ -23,7 +23,7 @@
       <!-- ------------------ MIDDLE SECTION ------------------- -->
       <div class="min-w-max h-full flex items-center">
         <div
-          @mouseover="isCategoryOpen = true"
+          @mouseover="()=>isCategoryOpen = true"
           class="flex h-full items-center gap-3 cursor-pointer"
         >
           <span>
@@ -63,12 +63,19 @@
     </nav>
 
     <!-- ------------------------ CATEGORY LIST ------------------------------- -->
+    <Transition
+      enter-from-class="opacity-0 -translate-y-10"
+      enter-active-class="transition duration-[150ms] ease-in"
+      leave-to-class="opacity-0 -translate-y-10"
+      leave-active-class="transition duration-[200ms] ease-in"
+      class="w-full bg-gray-b4 bg-opacity-[60%] fixed top-24 z-30 h-screen"
+    >
     <article
       v-show="isCategoryOpen"
       class="w-full bg-gray-b4 bg-opacity-[60%] fixed top-24 z-30 h-screen"
     >
       <div
-        @mouseleave="isCategoryOpen = false"
+        @mouseleave="() => isCategoryOpen = false"
         class="w-full h-[500px] bg-white p-4"
       >
         <div class="w-60 h-full">
@@ -79,7 +86,7 @@
               :key="item.title"
             >
               <span>
-                <NuxtIcon :name="item.iconName" class="text-2xl" />
+                <NuxtIcon :name="item.iconName" filled class="text-2xl" />
               </span>
               <p class="font-medium text-lg">{{ item.title }}</p>
             </li>
@@ -88,6 +95,7 @@
         <div class="w-full"></div>
       </div>
     </article>
+  </Transition>
     <div>
       <slot />
     </div>
@@ -125,15 +133,15 @@ const navList = ref([
 ]);
 const categoryList = ref([
   {
-    iconName: "layout/category/mobile",
+    iconName: "layout/category/monitor",
     title: "کامپیوتر",
   },
   {
-    iconName: "layout/category/computer",
+    iconName: "layout/category/airpods",
     title: "لوازم جانبی موبایل",
   },
   {
-    iconName: "layout/category/memory",
+    iconName: "layout/category/ram",
     title: "ذخیر سازی",
   },
   {
@@ -141,11 +149,11 @@ const categoryList = ref([
     title: "کنسول بازی",
   },
   {
-    iconName: "layout/category/cable",
+    iconName: "layout/category/electricity",
     title: "کابل و تبدیل",
   },
   {
-    iconName: "layout/category/sound",
+    iconName: "layout/category/speaker",
     title: "صوتی و تصویری",
   },
   {
@@ -153,7 +161,7 @@ const categoryList = ref([
     title: "محصولات اپل",
   },
   {
-    iconName: "layout/category/laptop",
+    iconName: "layout/category/keyboard-open",
     title: "تبلت و لپ تاپ",
   },
 ]);

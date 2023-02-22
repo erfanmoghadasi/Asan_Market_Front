@@ -38,7 +38,9 @@
 
       <!-- ------------------- BUTTONS -------------------- -->
       <div class="mt-14 flex items-center w-full gap-4">
-        <button class="w-full c-btn-primary">ورود</button>
+        <NuxtLink class="w-full c-btn-primary grid place-items-center" to="/">
+        ورود
+    </NuxtLink>
         <button
           @click.prevent="handleChange"
           class="w-full c-btn text-primary-orginal hover:text-gray-b1 hover:border-gray-b1 transition-all"
