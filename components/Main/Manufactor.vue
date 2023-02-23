@@ -43,7 +43,7 @@
         name="main/apple"
       />
     </div>
-    <div class="h-[330px] w-full box flex gap-[500px]">
+    <div class="h-[330px] w-full box flex gap-[500px] justify-between">
       <div class="h-full flex flex-col justify-center gap-4 items-start pr-40">
         <h6 class="font-bold text-3xl text-white">آسان سرویس</h6>
         <p class="font-light text-xl text-white text-right">

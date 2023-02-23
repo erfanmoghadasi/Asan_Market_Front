@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full px-44 pb-28">
+  <div class="max-w-[1558px] mx-auto  pb-28">
     <div class="relative w-full flex flex-col">
       <h4 class="font-bold text-3xl text-primary-b3">رسانه و مطالب</h4>
       <p class="text-xl leading-[44px] text-[#8C8C8C] mt-1">

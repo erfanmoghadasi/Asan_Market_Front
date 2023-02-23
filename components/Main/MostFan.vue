@@ -3,7 +3,7 @@
     <h3 class="font-bold text-3xl text-primary-b3 mb-24">
       دسته بندی های پر طرفدار
     </h3>
-    <div class="w-full flex flex-wrap justify-between gap-[70px]">
+    <div class="w-full flex flex-wrap justify-center gap-[70px]">
       <div
         v-for="product in products"
         :class="product.bg"

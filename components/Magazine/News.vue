@@ -1,5 +1,5 @@
 <template>
-  <div class="grow-[2] flex flex-col gap-6">
+  <div class="grow-[2] flex flex-col gap-6 ">
     <div v-for="news in newsList" class="w-full flex gap-6 justify-between">
       <nuxt-img width="241" :src="news.image" />
       <div class="grow py-6 flex flex-col justify-between">

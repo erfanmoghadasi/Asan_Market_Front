@@ -36,7 +36,7 @@
             </template>
             <template #fallback>
               <div class="w-full flex flex-wrap gap-6 justify-around pl-6">
-                <UtilsSkeletonCard v-for="s in 10" />
+                <UtilsSkeletonCard v-for="s in 16" />
               </div>
             </template>
           </Suspense>

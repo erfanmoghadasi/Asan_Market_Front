@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fav-box w-full h-[122px] rounded-lg flex justify-between items-center px-16 my-20"
+    class="max-w-[1558px] mx-auto fav-box w-full h-[122px] rounded-lg flex justify-between items-center px-16 my-20"
   >
     <div class="flex items-center justify-center gap-6">
       <h3 class="font-bold text-3xl text-white">
