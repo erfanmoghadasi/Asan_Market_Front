@@ -3,7 +3,7 @@
     <UtilsLoginBase
       :headerInfo="headersInfo[pageNumber]"
       :pageNumber="pageNumber"
-      @change-page="changePage"
+      @change-page="backPage"
     >
     <Transition
         appear
@@ -34,6 +34,9 @@ const pageNumber = ref(0);
 
 const changePage = (num: number) => {
   pageNumber.value = num;
+};
+const backPage = () => {
+  --pageNumber.value;
 };
 
 const componentsContent = computed(() => {

@@ -3,8 +3,13 @@
     class="relative my-10 w-[1200px] min-h-[540px] rounded-2xl shadow-[0_8px_22px_0px_#004B821A]"
   >
     <div
-      class="w-full h-full min-h-[540px] flex justify-center items-center p-16"
+      class="relative w-full h-full min-h-[540px] flex justify-center items-center p-16"
     >
+    <NuxtIcon name="login/back" filled 
+    class="absolute cursor-pointer left-8 top-8 scale-150 rotate-180"
+    v-if="pageNumber > 0"
+    @click="backButtonHandler"
+    />
       <!-- ---------------------RIGHT SIDE-------------------- -->
       <div
         class="relative w-1/2 h-full min-h-[540px] flex items-center justify-between"
@@ -14,20 +19,28 @@
           v-if="pageNumber > 0"
           class="absolute font-medium w-[90%] h-5 top-24 right-0 flex flex-col justify-between"
         >
-          <div class="text-primary-orginal">4 / {{ pageNumber }}</div>
+          <div class="w-full text-primary-orginal transition-all">4 / {{ pageNumber }}</div>
 
-          <div :class="stepperBgHandler">
+          <div 
+          class="relative w-full bg-primary-w4 h-1 flex justify-between items-center drop-shadow-sm"
+          >
+          <span
+          :class="stepperBgHandler" class="absolute border w-full border-primary-orginal" />
             <div
-              :class="pageNumber >= 1 ? 'current-step-dot' : 'disable-step-dot'"
+              class="w-2 h-2 rounded-full z-10 translate-x-1"
+              :class="pageNumber >= 1 ? 'bg-primary-orginal' : 'bg-primary-w4'"
             ></div>
             <div
-              :class="pageNumber >= 2 ? 'current-step-dot' : 'disable-step-dot'"
+              class="w-2 h-2 rounded-full z-10"
+              :class="pageNumber >= 2 ? 'bg-primary-orginal' : 'bg-primary-w4'"
             ></div>
             <div
-              :class="pageNumber >= 3 ? 'current-step-dot' : 'disable-step-dot'"
+              class="w-2 h-2 rounded-full z-10"
+              :class="pageNumber >= 3 ? 'bg-primary-orginal' : 'bg-primary-w4'"
             ></div>
             <div
-              :class="pageNumber >= 4 ? 'current-step-dot' : 'disable-step-dot'"
+              class="w-2 h-2 rounded-full z-10 -translate-x-1"
+              :class="pageNumber >= 4 ? 'bg-primary-orginal' : 'bg-primary-w4'"
             ></div>
           </div>
         </div>
@@ -57,13 +70,13 @@
         <slot />
       </div>
       <!-- ----------------------- BACK TO HOME -------------------------- -->
-      <div
-        @click="handleChange"
+      <NuxtLink
+        to="/"
         class="pb-4 flex min-w-fit gap-2 text-[#8C8C8C] absolute -bottom-16 cursor-pointer"
       >
-        <span class="drop-shadow-sm">بازگشت به خانه</span>
-        <span><Icon name="material-symbols:line-start-arrow" /></span>
-      </div>
+        <span class="drop-shadow-sm border-">بازگشت به خانه</span>
+        <NuxtIcon name="login/arrow-left" />
+      </NuxtLink>
     </div>
   </div>
 </template>
@@ -82,8 +95,8 @@ const props = defineProps({
 
 const emit = defineEmits(["change-page"]);
 
-const handleChange = () => {
-  emit("change-page", 0);
+const backButtonHandler = () => {
+  emit("change-page");
 };
 
 const stepperBgHandler = computed(() => {
@@ -105,27 +118,16 @@ const stepperBgHandler = computed(() => {
 
 <style scoped>
 .step-one {
-  background: linear-gradient(90deg#B2CCE0, 0%, #015699 0%);
-  @apply w-full  bg-primary-w4 h-[2px] flex justify-between items-center drop-shadow-sm;
+  width: 0%;
 }
 .step-two {
-  background: linear-gradient(90deg, #b2cce0 66%, #015699 66%);
-  @apply w-full  bg-primary-w4 h-[2px] flex justify-between items-center drop-shadow-sm;
+  width: 33%;
 }
 .step-three {
-  background: linear-gradient(90deg, #b2cce0 33%, #015699 33%);
-  @apply w-full  bg-primary-w4 h-[2px] flex justify-between items-center drop-shadow-sm;
+  width: 66%;
 }
 .step-four {
-  background: linear-gradient(90deg, #b2cce0 0%, #015699 0%);
-  @apply w-full  bg-primary-w4 h-[2px] flex justify-between items-center drop-shadow-sm;
+  width: 100%;
 }
 
-.disable-step-dot {
-  @apply w-2 h-2 bg-primary-w4 rounded-full;
-}
-
-.current-step-dot {
-  @apply w-2 h-2 bg-primary-orginal rounded-full;
-}
 </style>

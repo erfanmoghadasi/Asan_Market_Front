@@ -3,6 +3,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
+    "start": "nuxt start",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -13,8 +14,7 @@
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/tailwindcss": "^6.3.0",
     "nuxt": "^3.1.0",
-    "nuxt-headlessui": "^1.1.1",
-    "nuxt-icon": "^0.2.10"
+    "nuxt-headlessui": "^1.1.1"
   },
   "dependencies": {
     "nuxt-icons": "^3.1.0",

@@ -2,8 +2,7 @@
 export default defineNuxtConfig({
   modules: [
     "@nuxtjs/tailwindcss",
-    "nuxt-icons",
-    "nuxt-icon",
+    'nuxt-icons',
     'nuxt-swiper',
     '@nuxt/image-edge',
     'nuxt-headlessui'
@@ -15,7 +14,8 @@ export default defineNuxtConfig({
         lang: "fa",
       },
     },
-    pageTransition: { name: 'page', mode: 'out-in' }
+    pageTransition: { name: 'page', mode: 'out-in' },
+    layoutTransition: { name: 'layout', mode: 'out-in' }
   },
   imports: {
     dirs: ["layouts/**", "pages/**", "components/**", "assets/**"],

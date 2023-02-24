@@ -12,7 +12,7 @@
           class="flex items-center justify-center gap-2 rounded-[40px] w-32 h-12 font-bold text-xl text-white bg-gradient-to-tr from-[#76D2FF] to-[#0181C4]"
         >
           <span>مشاهده</span>
-          <NuxtIcon name="arrow-left" />
+          <NuxtIcon name="main/black-arrow-left" />
         </button>
       </div>
       <nuxt-img
@@ -34,7 +34,7 @@
           class="flex items-center justify-center gap-2 rounded-[40px] w-32 h-12 font-bold text-xl text-white bg-gradient-to-tr from-[#76D2FF] to-[#0181C4]"
         >
           <span>مشاهده</span>
-          <NuxtIcon name="arrow-left" />
+          <NuxtIcon name="main/black-arrow-left" />
         </button>
       </div>
       <nuxt-img src="/images/main/headphone.png" height="full" />
