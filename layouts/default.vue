@@ -1,7 +1,7 @@
 <template>
   <div class="w-full bg-white">
     <nav
-      @mouseover.self="() => isCategoryOpen = false"
+      @mouseover.self="() => (isCategoryOpen = false)"
       class="fixed z-40 bg-white w-full h-24 px-7 flex items-center justify-between shadow-[0px_2px_20px_rgba(0,75,130,0.14)]"
     >
       <!-- ------------------ LOGO ------------------- -->
@@ -23,7 +23,7 @@
       <!-- ------------------ MIDDLE SECTION ------------------- -->
       <div class="min-w-max h-full flex items-center">
         <div
-          @mouseover="()=>isCategoryOpen = true"
+          @mouseover="() => (isCategoryOpen = true)"
           class="flex h-full items-center gap-3 cursor-pointer"
         >
           <span>
@@ -40,10 +40,10 @@
             :key="item.title"
             class="flex h-full items-center gap-3 cursor-pointer"
           >
-            <span>
+            <NuxtLink :to="item.link" class="flex gap-3 items-center">
               <NuxtIcon :name="item.iconName" filled class="text-2xl" />
-            </span>
-            <p class="font-medium text-lg">{{ item.title }}</p>
+              <p class="font-medium text-lg">{{ item.title }}</p>
+            </NuxtLink>
           </li>
         </ul>
 
@@ -70,32 +70,32 @@
       leave-active-class="transition duration-[200ms] ease-in"
       class="w-full bg-gray-b4 bg-opacity-[60%] fixed top-24 z-30 h-screen"
     >
-    <article
-      v-show="isCategoryOpen"
-      class="w-full bg-gray-b4 bg-opacity-[60%] fixed top-24 z-30 h-screen"
-    >
-      <div
-        @mouseleave="() => isCategoryOpen = false"
-        class="w-full h-[500px] bg-white p-4"
+      <article
+        v-show="isCategoryOpen"
+        class="w-full bg-gray-b4 bg-opacity-[60%] fixed top-24 z-30 h-screen"
       >
-        <div class="w-60 h-full">
-          <ul class="flex flex-col justify-between h-full">
-            <li
-              class="flex items-center gap-3 cursor-pointer text-gray-b2"
-              v-for="item in categoryList"
-              :key="item.title"
-            >
-              <span>
-                <NuxtIcon :name="item.iconName" filled class="text-2xl" />
-              </span>
-              <p class="font-medium text-lg">{{ item.title }}</p>
-            </li>
-          </ul>
+        <div
+          @mouseleave="() => (isCategoryOpen = false)"
+          class="w-full h-[500px] bg-white p-4"
+        >
+          <div class="w-60 h-full">
+            <ul class="flex flex-col justify-between h-full">
+              <li
+                class="flex items-center gap-3 cursor-pointer text-gray-b2"
+                v-for="item in categoryList"
+                :key="item.title"
+              >
+                <span>
+                  <NuxtIcon :name="item.iconName" filled class="text-2xl" />
+                </span>
+                <p class="font-medium text-lg">{{ item.title }}</p>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full"></div>
         </div>
-        <div class="w-full"></div>
-      </div>
-    </article>
-  </Transition>
+      </article>
+    </Transition>
     <div>
       <slot />
     </div>
@@ -109,26 +109,32 @@ const navList = ref([
   {
     iconName: "layout/vector",
     title: "خانه",
+    link: "/",
   },
   {
     iconName: "layout/shop",
     title: "فروشگاه",
+    link: "/products",
   },
   {
     iconName: "layout/notification-status",
     title: "رسانه ها",
+    link: "/magazine",
   },
   {
     iconName: "layout/briefcase",
     title: "همکاری با ما",
+    link: "",
   },
   {
     iconName: "layout/call-calling",
     title: "تماس با ما",
+    link: "/about",
   },
   {
     iconName: "layout/user-tag",
     title: "درباره ما",
+    link: "",
   },
 ]);
 const categoryList = ref([

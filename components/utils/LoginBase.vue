@@ -5,11 +5,13 @@
     <div
       class="relative w-full h-full min-h-[540px] flex justify-center items-center p-16"
     >
-    <NuxtIcon name="login/back" filled 
-    class="absolute cursor-pointer left-8 top-8 scale-150 rotate-180"
-    v-if="pageNumber > 0"
-    @click="backButtonHandler"
-    />
+      <NuxtIcon
+        name="login/back"
+        filled
+        class="absolute cursor-pointer left-8 top-8 scale-150 rotate-180"
+        v-if="pageNumber > 0"
+        @click="backButtonHandler"
+      />
       <!-- ---------------------RIGHT SIDE-------------------- -->
       <div
         class="relative w-1/2 h-full min-h-[540px] flex items-center justify-between"
@@ -19,13 +21,17 @@
           v-if="pageNumber > 0"
           class="absolute font-medium w-[90%] h-5 top-24 right-0 flex flex-col justify-between"
         >
-          <div class="w-full text-primary-orginal transition-all">4 / {{ pageNumber }}</div>
+          <div class="w-full text-primary-orginal transition-all">
+            4 / {{ pageNumber }}
+          </div>
 
-          <div 
-          class="relative w-full bg-primary-w4 h-1 flex justify-between items-center drop-shadow-sm"
+          <div
+            class="relative w-full bg-primary-w4 h-1 flex justify-between items-center drop-shadow-sm"
           >
-          <span
-          :class="stepperBgHandler" class="absolute border w-full border-primary-orginal" />
+            <span
+              :class="stepperBgHandler"
+              class="absolute border w-full border-primary-orginal"
+            />
             <div
               class="w-2 h-2 rounded-full z-10 translate-x-1"
               :class="pageNumber >= 1 ? 'bg-primary-orginal' : 'bg-primary-w4'"
@@ -129,5 +135,4 @@ const stepperBgHandler = computed(() => {
 .step-four {
   width: 100%;
 }
-
 </style>
