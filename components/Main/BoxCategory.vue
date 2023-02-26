@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-[1558px] mx-auto py-44 flex items-center gap-6 justify-between">
+  <div class="max-w-[1558px] mx-auto my-28 flex items-center gap-6 justify-between">
     <div
       class="box relative w-44 h-44 rounded-2xl bg-gradient-to-br from-[#E9ECEF] to-[#FFFFFF] cursor-pointer"
       v-for="item in boxList"

@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-44 mb-32 px-44 w-full flex flex-col items-center">
+  <div class="mt-32 mb-32 max-w-[1558px] mx-auto w-full flex flex-col items-center">
     <h3 class="font-bold text-3xl text-primary-b3 mb-24">
       دسته بندی های پر طرفدار
     </h3>

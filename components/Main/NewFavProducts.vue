@@ -8,7 +8,9 @@
       </p>
       <swiper
         class="mt-12 mb-20 w-full flex items-center justify-between"
+        :modules="[Navigation]"
         :slides-per-view="5"
+        :navigation="{nextEl: '.next-el-new', prevEl: '.prev-el-new'}"
       >
         <swiper-slide v-for="card in newProducts" :key="card.id">
           <UtilsCard
@@ -25,12 +27,12 @@
       <NuxtIcon
         name="swiper/arrow-circle-right"
         filled
-        class="text-[40px] absolute top-[50%] -right-20 cursor-pointer"
+        class="next-el-new text-[40px] absolute top-[50%] -right-20 cursor-pointer"
       />
       <NuxtIcon
         name="swiper/arrow-circle-left"
         filled
-        class="text-[40px] absolute top-[50%] -left-10 cursor-pointer"
+        class="prev-el-new text-[40px] absolute top-[50%] -left-10 cursor-pointer"
       />
     </div>
 
@@ -43,8 +45,10 @@
         <span class="text-primary-orginal font-bold">اینجا کلیک کنید</span>
       </p>
       <swiper
-        class="mt-12 mb-20 w-full flex items-center justify-between"
+        class="relative mt-12 mb-20 w-full flex items-center justify-between"
+        :modules="[Navigation]"
         :slides-per-view="5"
+        :navigation="{nextEl: '.next-el', prevEl: '.prev-el'}"
       >
         <swiper-slide v-for="card in newProducts" :key="card.id">
           <UtilsCard
@@ -61,18 +65,21 @@
       <NuxtIcon
         name="swiper/arrow-circle-right"
         filled
-        class="text-[40px] absolute top-[50%] -right-20 cursor-pointer"
+        class="next-el text-[40px] absolute top-[50%] -right-20 cursor-pointer"
       />
       <NuxtIcon
         name="swiper/arrow-circle-left"
         filled
-        class="text-[40px] absolute top-[50%] -left-10 cursor-pointer"
+        class="prev-el text-[40px] absolute top-[50%] -left-10 cursor-pointer"
       />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { SwiperSlide , Swiper } from "swiper/vue";
+import { Navigation } from 'swiper'
+
 const newProducts = ref([
   {
     id: 1,
@@ -119,7 +126,35 @@ const newProducts = ref([
     price: "908,000",
     liked: false,
   },
+  {
+    id: 6,
+    image: "images/products/memory2.png",
+    category: "ذخیره سازی",
+    description: "بلوتوث فندکی سفید برند وریتی",
+    rate: 1,
+    price: "908,000",
+    liked: false,
+  },
+  {
+    id: 7,
+    image: "images/products/watch.png",
+    category: "ذخیره سازی",
+    description: "ساعت هوشمند طرح اپل مدل NG4521",
+    rate: 5,
+    price: "824,000",
+    liked: false,
+  },
+  {
+    id: 8,
+    image: "images/products/memory2.png",
+    category: "ذخیره سازی",
+    description: "بلوتوث فندکی سفید برند وریتی",
+    rate: 1,
+    price: "908,000",
+    liked: false,
+  },
 ]);
+
 </script>
 
 <style scoped></style>

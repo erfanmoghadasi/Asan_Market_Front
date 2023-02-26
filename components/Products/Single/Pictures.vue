@@ -30,13 +30,22 @@
         <NuxtIcon name="single-product/gallery-slash" filled class="text-2xl" />
       </span>
     </div>
-    <div class="flex items-center gap-3 text-gray-b4 cursor-pointer">
+    <div @click="() => isReportModalOpen = true"  class="flex items-center gap-3 text-gray-b4 cursor-pointer">
       <NuxtIcon name="single-product/info-circle" filled />
       <p class="font-medium">گزارش نادرستی مشخصات</p>
     </div>
+
+    
+<!-- ------------------------------ REPORT MODAL ---------------------------- -->
+    <ProductsModalReport 
+    :isReportModalOpen="isReportModalOpen"
+    @close-modal="() => isReportModalOpen = false"
+    />
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  const isReportModalOpen = ref(false)
+</script>
 
 <style scoped></style>
