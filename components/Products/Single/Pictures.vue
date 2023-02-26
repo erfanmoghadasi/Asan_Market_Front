@@ -9,11 +9,13 @@
         <NuxtIcon filled class="cursor-pointer" name="single-product/chart" />
         <NuxtIcon filled class="cursor-pointer" name="single-product/heart" />
         <NuxtIcon
+          @click="() => (isShareModalOpen = true)"
           filled
           class="cursor-pointer"
           name="single-product/hierarchy"
         />
         <NuxtIcon
+          @click="() => (isNotificationModalOpen = true)"
           filled
           class="cursor-pointer"
           name="single-product/notification"
@@ -30,22 +32,36 @@
         <NuxtIcon name="single-product/gallery-slash" filled class="text-2xl" />
       </span>
     </div>
-    <div @click="() => isReportModalOpen = true"  class="flex items-center gap-3 text-gray-b4 cursor-pointer">
+    <div
+      @click="() => (isReportModalOpen = true)"
+      class="flex items-center gap-3 text-gray-b4 cursor-pointer"
+    >
       <NuxtIcon name="single-product/info-circle" filled />
       <p class="font-medium">گزارش نادرستی مشخصات</p>
     </div>
 
-    
-<!-- ------------------------------ REPORT MODAL ---------------------------- -->
-    <ProductsModalReport 
-    :isReportModalOpen="isReportModalOpen"
-    @close-modal="() => isReportModalOpen = false"
+    <!-- ------------------------------ REPORT MODAL ---------------------------- -->
+    <ProductsModalReport
+      :isReportModalOpen="isReportModalOpen"
+      @close-modal="() => (isReportModalOpen = false)"
+    />
+    <!-- ------------------------------ SHARING MODAL ---------------------------- -->
+    <ProductsModalShare
+      :isShareModalOpen="isShareModalOpen"
+      @close-modal="() => (isShareModalOpen = false)"
+    />
+    <!-- ------------------------------ NOTIFICATION MODAL ---------------------------- -->
+    <ProductsModalNotification
+      :isNotificationModalOpen="isNotificationModalOpen"
+      @close-modal="() => (isNotificationModalOpen = false)"
     />
   </div>
 </template>
 
 <script setup lang="ts">
-  const isReportModalOpen = ref(false)
+const isReportModalOpen = ref(false);
+const isShareModalOpen = ref(false);
+const isNotificationModalOpen = ref(false);
 </script>
 
 <style scoped></style>

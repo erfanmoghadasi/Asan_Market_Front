@@ -14,7 +14,7 @@
         شما هم درباره این کالا نظر خود را ثبت کنید. نظر شما پس از بررسی و تایید
         نمایش داده میشود
       </p>
-      <button class="c-btn-white w-full font-medium text-xl">ثبت دیدگاه</button>
+      <button @click="() => isReviewModalOpen = true" class="c-btn-white w-full font-medium text-xl">ثبت دیدگاه</button>
     </div>
 
     <!-- ---------------------------- LEFT SECTION ----------------------------- -->
@@ -120,9 +120,17 @@
         </p>
       </div>
     </div>
+
+    <!-- ------------------------------ SHARING MODAL ---------------------------- -->
+    <ProductsModalReview 
+    :isReviewModalOpen="isReviewModalOpen"
+    @close-modal="() => isReviewModalOpen = false"
+    />
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  const isReviewModalOpen = ref(false)
+</script>
 
 <style scoped></style>
