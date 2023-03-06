@@ -2,7 +2,7 @@
   <div class="w-full bg-white">
     <nav
       @mouseover.self="() => (isCategoryOpen = false)"
-      class="fixed z-40 bg-white w-full h-24 xl:h-16 mb-16 px-7 flex items-center justify-between shadow-[0px_2px_20px_rgba(0,75,130,0.14)]"
+      class="fixed z-40 bg-white w-full h-24 m-xl:h-16 mb-16 px-7 flex items-center justify-between shadow-[0px_2px_20px_rgba(0,75,130,0.14)]"
     >
       <!-- ------------------ LOGO ------------------- -->
       <NuxtLink class="h-full" to="/">
@@ -10,12 +10,12 @@
           class="flex overflow-hidden gap-3 h-full items-center text-primary-orginal cursor-pointer"
         >
           <span class="flex items-center max-h-10">
-            <NuxtIcon name="layout/nav-logo" class="text-5xl xl:text-2xl"
+            <NuxtIcon name="layout/nav-logo" class="text-5xl m-xl:text-2xl"
           /></span>
           <span class="max-h-10 flex items-center">
             <NuxtIcon
               name="layout/asan-market"
-              class="text-[188px] xl:text-[120px] translate-y-2"
+              class="text-[188px] m-xl:text-[120px] translate-y-2"
           /></span>
         </div>
       </NuxtLink>
@@ -27,22 +27,22 @@
           class="flex h-full items-center gap-3 cursor-pointer"
         >
           <span>
-            <NuxtIcon name="layout/menu" filled class="text-2xl xl:text-base" />
+            <NuxtIcon name="layout/menu" filled class="text-2xl m-xl:text-base" />
           </span>
           <p class="font-medium text-lg  xl:text-sm">دسته بندی کالاها</p>
         </div>
 
         <span class="h-5 bg-[#DCDCDC] w-[1px] mx-3 rounded" />
 
-        <ul class="flex items-center justify-between gap-14 xl:gap-10 mx-auto">
+        <ul class="flex items-center justify-between gap-14 m-xl:gap-10 mx-auto">
           <li
             v-for="item in navList"
             :key="item.title"
             class="flex h-full items-center gap-3 cursor-pointer"
           >
             <NuxtLink :to="item.link" class="flex gap-3 xl:gap-2 items-center">
-              <NuxtIcon :name="item.iconName" filled class="text-2xl  xl:text-sm" />
-              <p class="font-medium text-lg   xl:text-sm">{{ item.title }}</p>
+              <NuxtIcon :name="item.iconName" filled class="text-2xl  m-xl:text-sm" />
+              <p class="font-medium text-lg   m-xl:text-sm">{{ item.title }}</p>
             </NuxtLink>
           </li>
         </ul>
@@ -72,11 +72,11 @@
     >
       <article
         v-show="isCategoryOpen"
-        class="w-full bg-gray-b4 bg-opacity-[60%] fixed top-24 m-xl:top-16 z-30 h-screen"
+        class="w-full bg-gray-b4 bg-opacity-[60%] fixed top-20 m-xl:top-16 z-30 h-screen"
       >
         <div
           @mouseleave="() => (isCategoryOpen = false)"
-          class="w-full h-[500px] xl:h-[400px] bg-white p-4"
+          class="w-full h-[500px] m-xl:h-[400px] bg-white p-4"
         >
           <div class="w-60 h-full">
             <ul class="flex flex-col justify-between h-full">
@@ -86,9 +86,9 @@
                 :key="item.title"
               >
                 <span>
-                  <NuxtIcon :name="item.iconName" filled class="text-2xl xl:text-sm" />
+                  <NuxtIcon :name="item.iconName" filled class="text-2xl m-xl:text-sm" />
                 </span>
-                <p class="font-medium text-lg xl:text-sm">{{ item.title }}</p>
+                <p class="font-medium text-lg m-xl:text-sm">{{ item.title }}</p>
               </li>
             </ul>
           </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-[1558px] xl:max-w-full xl:mx-20 mx-auto my-20 flex items-center justify-between relative">
+  <div class="max-w-[1558px] m-xl:max-w-full m-xl:mx-20 mx-auto my-20 flex items-center justify-between relative">
     <div
       v-for="post in reviews"
       :style="{ backgroundImage: `url(${post.bgImg})` }"
