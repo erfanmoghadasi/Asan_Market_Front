@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-[1540px] bg-[#F6F8FA] px-44 py-20">
+  <div class="w-full h-[1540px] bg-[#F6F8FA] px-44 m-xl:px-24 py-20">
     <div class="max-w-[1558px] mx-auto relative w-full flex flex-col">
       <h4 class="font-bold text-3xl text-primary-b3">جدیدترین محصولات</h4>
       <p class="text-xl leading-[44px] text-[#8C8C8C] mt-1">
@@ -7,10 +7,15 @@
         <span class="text-primary-orginal font-bold">اینجا کلیک کنید</span>
       </p>
       <swiper
+        :breakpoints="{
+          1280: {
+            slidesPerView: 4,
+          },
+        }"
         class="mt-12 mb-20 w-full flex items-center justify-between"
         :modules="[Navigation]"
-        :slides-per-view="5"
-        :navigation="{nextEl: '.next-el-new', prevEl: '.prev-el-new'}"
+        :slides-per-view="4"
+        :navigation="{ nextEl: '.next-el-new', prevEl: '.prev-el-new' }"
       >
         <swiper-slide v-for="card in newProducts" :key="card.id">
           <UtilsCard
@@ -27,12 +32,12 @@
       <NuxtIcon
         name="swiper/arrow-circle-right"
         filled
-        class="next-el-new text-[40px] absolute top-[50%] -right-20 cursor-pointer"
+        class="next-el-new text-[40px] absolute top-[50%] -right-14 cursor-pointer"
       />
       <NuxtIcon
         name="swiper/arrow-circle-left"
         filled
-        class="prev-el-new text-[40px] absolute top-[50%] -left-10 cursor-pointer"
+        class="prev-el-new text-[40px] absolute top-[50%] -left-14 cursor-pointer"
       />
     </div>
 
@@ -45,10 +50,15 @@
         <span class="text-primary-orginal font-bold">اینجا کلیک کنید</span>
       </p>
       <swiper
+        :breakpoints="{
+          1280: {
+            slidesPerView: 4,
+          },
+        }"
         class="relative mt-12 mb-20 w-full flex items-center justify-between"
         :modules="[Navigation]"
         :slides-per-view="5"
-        :navigation="{nextEl: '.next-el', prevEl: '.prev-el'}"
+        :navigation="{ nextEl: '.next-el', prevEl: '.prev-el' }"
       >
         <swiper-slide v-for="card in newProducts" :key="card.id">
           <UtilsCard
@@ -65,20 +75,20 @@
       <NuxtIcon
         name="swiper/arrow-circle-right"
         filled
-        class="next-el text-[40px] absolute top-[50%] -right-20 cursor-pointer"
+        class="next-el text-[40px] absolute top-[50%] -right-14 cursor-pointer"
       />
       <NuxtIcon
         name="swiper/arrow-circle-left"
         filled
-        class="prev-el text-[40px] absolute top-[50%] -left-10 cursor-pointer"
+        class="prev-el text-[40px] absolute top-[50%] -left-14 cursor-pointer"
       />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { SwiperSlide , Swiper } from "swiper/vue";
-import { Navigation } from 'swiper'
+import { SwiperSlide, Swiper } from "swiper/vue";
+import { Navigation } from "swiper";
 
 const newProducts = ref([
   {
@@ -154,7 +164,6 @@ const newProducts = ref([
     liked: false,
   },
 ]);
-
 </script>
 
 <style scoped></style>

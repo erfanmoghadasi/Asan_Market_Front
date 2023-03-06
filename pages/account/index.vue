@@ -1,10 +1,13 @@
 <template>
-  <div class="max-w-[1556px] pt-36 mx-auto">
-    <AccountLogoutModal :isLogoutModal="isLogoutModal" @close-modal="() => isLogoutModal = false" />
+  <div class="max-w-[1556px] m-xl:max-w-[1180px] pt-36 mx-auto">
+    <AccountLogoutModal
+      :isLogoutModal="isLogoutModal"
+      @close-modal="() => (isLogoutModal = false)"
+    />
     <div
       class="flex justify-between items-center px-6 mb-14 h-[91px] w-full bg-gray-b9 border-2 border-gray-b7 rounded-[10px]"
     >
-      <ul class="flex items-center gap-14">
+      <ul class="flex items-center gap-14 m-xl:gap-8">
         <li
           v-for="item in navList"
           :key="item.id"
@@ -14,17 +17,17 @@
               ? 'text-primary-b4  border-primary-orginal '
               : 'text-gray-b4 border-transparent'
           "
-          class="cursor-pointer border-b-4 py-8 h-full font-medium text-lg flex gap-3 transition-all"
+          class="cursor-pointer border-b-4 py-8 h-full font-medium text-lg m-xl:text-sm flex gap-3 transition-all"
         >
-          <NuxtIcon :name="item.icon" filled class="text-2xl" />
+          <NuxtIcon :name="item.icon" filled class="text-2xl m-xl:text-lg" />
           <span>{{ item.title }}</span>
         </li>
       </ul>
       <button
-        class="flex items-center gap-4 px-5 py-4 bg-gray-b8 text-error-b2 rounded-md font-medium tex-lg box-content hover:border border border-transparent hover:border-error-b2 hover:bg-white transition-all"
-        @click="() => isLogoutModal = true"
+        class="flex items-center gap-4 px-5 py-4 bg-gray-b8 text-error-b2 rounded-md font-medium tex-lg  m-xl:text-sm  box-content hover:border border border-transparent hover:border-error-b2 hover:bg-white transition-all"
+        @click="() => (isLogoutModal = true)"
       >
-        <NuxtIcon name="account/power" filled class="text-2xl" />
+        <NuxtIcon name="account/power" filled class="text-2xl m-xl:text-lg" />
         <span>خروج از حساب</span>
       </button>
     </div>
@@ -37,8 +40,8 @@
         leave-to-class="opacity-0 "
         leav-active-class="transition duration-[200ms]"
       >
-      <component :is="currentComponent" />
-    </Transition>
+        <component :is="currentComponent" />
+      </Transition>
     </div>
   </div>
 </template>
@@ -47,7 +50,7 @@
 import Profile from "/components/Account/Profile.vue";
 import Favourites from "/components/Account/Favourites.vue";
 
-const isLogoutModal = ref(false)
+const isLogoutModal = ref(false);
 const selectedNum = ref(1);
 const currentComponent = computed(() => {
   switch (selectedNum.value) {
@@ -62,7 +65,7 @@ const navList = ref([
   {
     id: 1,
     title: "پروفایل کاربری",
-    icon: "account/heart",
+    icon: "account/user-square",
   },
   {
     id: 2,

@@ -37,6 +37,7 @@
         <span class="font-medium text-sm">ویرایش اطلاعات</span>
       </button>
       <button
+        @click="() => (isChangePassModalOpen = true)"
         class="mt-3 w-full c-btn-primary flex items-center justify-center gap-2"
       >
         <NuxtIcon
@@ -56,7 +57,7 @@
         <span class="font-bold text-2xl text-gray-b2">اطلاعات کاربری</span>
       </div>
       <div
-        class="max-h-[434px] grid pl-2 grid-cols-2 gap-x-6 gap-y-3 mt-6 overflow-y-auto"
+        class="max-h-[434px] grid pl-2 grid-cols-2 m-xl:grid-cols-1 gap-x-6 gap-y-3 mt-6 overflow-y-auto"
       >
         <div
           v-for="item in 20"
@@ -94,9 +95,17 @@
         <span class="text-sm">آپلود فایل</span>
       </button>
     </div>
+
+    <!-- -------------------------- CHANGE PASS MODAL  ------------------------------ -->
+    <AccountChangePassModal
+      :isChangePassModalOpen="isChangePassModalOpen"
+      @close-modal="() => (isChangePassModalOpen = false)"
+    />
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const isChangePassModalOpen = ref(false);
+</script>
 
 <style scoped></style>

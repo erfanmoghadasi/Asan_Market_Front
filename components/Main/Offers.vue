@@ -1,6 +1,6 @@
 <template>
   <div
-    class="max-w-[1558px] mx-auto my-20 px-6 h-[454px] bg-gray-b8 rounded-2xl flex items-center justify-between"
+    class="max-w-[1558px] xl:max-w-fit xl:mx-20 mx-auto my-20 px-6 h-[454px] bg-gray-b8 rounded-2xl flex items-center justify-between"
   >
     <div class="w-[350px] mx-auto">
       <div class="gift-cart w-44 mx-auto relative z-20">

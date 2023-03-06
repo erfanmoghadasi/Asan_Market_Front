@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-[145px] max-w-[1558px] mx-auto">
+  <div class="pt-[145px] max-w-[1558px] mx-auto m-xl:px-20">
     <div class="w-full mb-12 text-[#999]">
       فروشگاه آسان مارکت / رسانه ها / سخت افزار و قطعات / گلکسی بوک
     </div>
@@ -63,7 +63,7 @@
         </p>
       </div>
       <!-- ----------------------------- LEFT SIDE ------------------------ -->
-      <div class="">
+      <div class="m-xl:hidden">
         <MagazineMostFav />
         <div class="flex min-h-fit justify-between flex-col gap-6">
           <nuxt-img class="rounded-[10px]" src="images/magazine/ad.png" />

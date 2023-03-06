@@ -12,7 +12,7 @@
 
     <div class="flex justify-center gap-36 mb-80">
       <!-- ------------------------------- RIGHT SECTION ------------------------------- -->
-      <div class="relative w-[560px]">
+      <div class="relative w-[560px] m-xl:w-[400px]">
         <h1 class="relative font-black text-3xl text-gray-b2 inline-block mb-8">
           ارتباط با ما
           <span
@@ -75,7 +75,7 @@
           </div>
         </div>
       </div>
-      <!-- ------------------------------- RIGHT SECTION ------------------------------- -->
+      <!-- ------------------------------- LEFT SECTION ------------------------------- -->
       <div class="w-[591px] relative flex items-end">
         <span
           class="absolute left-0 top-0 w-[232px] h-[464px] rounded-2xl bg-primary-orginal"

@@ -1,11 +1,11 @@
 <template>
-  <div class="max-w-[1558px] mx-auto my-28  flex items-center gap-6">
+  <div class="max-w-[1558px] xl:max-w-fit mx-auto xl:mx-20 my-28  flex items-center gap-6">
     <div class="w-full h-[300px] rounded-[10px] bg-[#F5F5F5] flex justify-between">
       <div class="flex flex-col justify-center gap-8 px-14">
-        <h4 class="font-black text-4xl">
+        <h4 class="font-black text-4xl xl:text-2xl">
           فروش ویژه کنسول گیمینگ و محصولات اپل
         </h4>
-        <p class="text-xl text-[#747474]">
+        <p class="text-xl  xl:text-base text-[#747474]">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
         </p>
         <button
@@ -26,8 +26,8 @@
       class="w-full h-[300px] rounded-[10px] left-box flex items-center justify-between overflow-hidden"
     >
       <div class="flex flex-col justify-center gap-8 px-14">
-        <h4 class="font-black text-4xl">هندزفری بیسیم شـــــــارک</h4>
-        <p class="text-xl text-[#1E1E1E]">
+        <h4 class="font-black text-4xl xl:text-2xl">هندزفری بیسیم شـــــــارک</h4>
+        <p class="text-xl xl:text-base text-[#1E1E1E]">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
         </p>
         <button

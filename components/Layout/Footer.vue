@@ -1,31 +1,31 @@
 <template>
   <footer
-    class="bg-[#F5F5F5] h-[700px] px-[184px] flex items-center justify-between"
+    class="bg-[#F5F5F5] h-[700px] px-[184px] xl:px-20 flex items-center justify-between"
   >
     <!-- ---------------------RIGHT FOOETR---------------------------------- -->
     <div
-      class="w-[523px] h-[500px] text-gray-b2 bg-gray-b8 border-gray-b7 border rounded-2xl flex flex-col p-8 leading-[30px]"
+      class="w-[523px] xl:w-[400px] h-[500px] text-gray-b2 bg-gray-b8 border-gray-b7 border rounded-2xl flex flex-col p-8 leading-[30px]"
     >
       <div
         class="flex gap-3 h-10 items-center text-primary-orginal cursor-pointer"
       >
         <span class="flex items-center max-h-10">
-          <NuxtIcon name="layout/nav-logo" class="text-5xl"
+          <NuxtIcon name="layout/nav-logo" class="text-5xl xl:text-2xl"
         /></span>
         <span class="max-h-10 flex items-center">
           <NuxtIcon
             name="layout/asan-market"
-            class="text-[188px] translate-y-2"
+            class="text-[188px] xl:text-[140px] translate-y-2"
         /></span>
       </div>
-      <p class="mt-6 text-lg font-medium">
+      <p class="mt-6 text-lg xl:text-base font-medium">
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
         از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
         سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
         متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
         درصد گذشته حال و آینده
       </p>
-      <div class="mt-10 flex flex-col gap-4">
+      <div class="mt-10 flex flex-col gap-4  xl:text-sm">
         <div class="flex gap-[14px] items-center">
           <span>
             <NuxtIcon name="layout/call" filled class="text-5" />
@@ -51,19 +51,19 @@
     </div>
 
     <!-- ---------------------LEFT FOOTRE---------------------------------- -->
-    <div class="w-[923px] h-[422px] flex flex-col justify-between">
+    <div class="w-[923px] xl:w-[700px] h-[422px] flex flex-col justify-between">
       <div class="flex flex-col gap-6">
         <div
           class="h-[72px] border border-gray-b7 bg-gray-b8 rounded-xl px-6 flex justify-between items-center"
         >
-          <p class="text-lg font-medium">
+          <p class="text-lg xl:text-sm font-medium">
             با ثبت ایمیل از آخرین تخفیف ها با خبر شوید
           </p>
           <div class="flex gap-2 items-center">
             <input
               type="text"
               placeholder="آدرس ایمیل"
-              class="w-[344px] h-12 rounded-lg bg-gray-b7 placeholder:absolute placeholder:right-6 placeholder:top-3 placeholder:text-gray-b3 focus:pl-6"
+              class="w-[344px] xl:w-[200px] h-12 rounded-lg bg-gray-b7 placeholder:absolute placeholder:right-6 placeholder:top-3 placeholder:text-gray-b3 focus:pl-6"
               dir="ltr"
             />
             <button
@@ -76,7 +76,7 @@
         <div
           class="h-[72px] border border-gray-b7 bg-gray-b8 rounded-xl px-6 flex justify-between items-center"
         >
-          <p class="text-lg font-medium">
+          <p class="text-lg xl:text-sm font-medium">
             ما را در شبکه های اجتماعی دنبال کنید
           </p>
           <div class="flex gap-2 items-center flex-row-reverse">

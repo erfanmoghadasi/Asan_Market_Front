@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-white w-[292px] h-[406px] p-6 pb-8 rounded-[10px] flex flex-col justify-between card-shadow"
+    class="bg-white w-[292px] m-xl:w-[280px] h-[406px] p-6 pb-8 rounded-[10px] flex flex-col justify-between card-shadow"
   >
     <div class="h-[200px] w-full mx-auto skeleton"></div>
     <div class="flex flex-col justify-center gap-6 rounded-md">

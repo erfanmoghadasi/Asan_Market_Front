@@ -1,9 +1,9 @@
 <template>
-  <div class="max-w-[1558px] mx-auto my-20 flex items-center justify-between relative">
+  <div class="max-w-[1558px] xl:max-w-full xl:mx-20 mx-auto my-20 flex items-center justify-between relative">
     <div
       v-for="post in reviews"
       :style="{ backgroundImage: `url(${post.bgImg})` }"
-      class="post w-[292px] h-[224px]"
+      class="post w-[292px] h-[224px] xl:w-[220px] xl:h-[170px] rounded-[10px] overflow-hidden"
       :key="post.id"
     >
       <div class="flex w-full h-full items-end justify-between p-6 text-white">

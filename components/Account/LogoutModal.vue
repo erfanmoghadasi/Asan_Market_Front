@@ -24,7 +24,7 @@
         >
           <HeadlessDialogPanel
             as="div"
-            class="flex flex-col items-center py-9 px-20 fixed top-[100px] left-1/2 -translate-x-1/2 w-[514px] h-[256px] bg-white rounded-[10px] mx-auto mt-52 z-50"
+            class="flex flex-col items-center py-9 px-20 fixed top-[100px] left-1/2 -translate-x-1/2 w-[514px] h-[256px] bg-white rounded-[10px] mx-auto mt-52 m-xl:mt-28 z-50"
           >
             <HeadlessDialogTitle class="flex items-center gap-4 mb-3">
               <NuxtIcon name="account/logout" class="text-3xl" filled />

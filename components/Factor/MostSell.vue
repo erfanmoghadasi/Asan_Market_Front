@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full max-w-[1558px]">
+  <div class="w-full max-w-[1558px] m-xl:max-w-[1280px] px-12">
     <div class="relative w-full flex flex-col">
       <h4 class="font-bold text-3xl text-primary-b3 text-center py-16">
         خریداران این محصولات را خریده اند
@@ -7,6 +7,11 @@
       <swiper
         class="mt-12 w-full flex items-center justify-between"
         :slides-per-view="5"
+        :breakpoints="{
+        1280:{
+          slidesPerView:4
+        }
+      }"
       >
         <swiper-slide v-for="card in newProducts" :key="card.id">
           <UtilsCard

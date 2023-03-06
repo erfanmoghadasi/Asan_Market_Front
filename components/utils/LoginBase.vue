@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative my-10 w-[1200px] min-h-[540px] rounded-2xl shadow-[0_8px_22px_0px_#004B821A]"
+    class="relative my-10 w-[1200px] min-h-[540px] m-xl:h-[390px] rounded-2xl shadow-[0_8px_22px_0px_#004B821A]"
   >
     <div
       class="relative w-full h-full min-h-[540px] flex justify-center items-center p-16"
@@ -72,7 +72,7 @@
       </div>
       <!-- ---------------------LEFT SIDE-------------------- -->
 
-      <div class="w-1/2 h-full px-16">
+      <div class="w-1/2 h-full px-16 overflow-y-auto">
         <slot />
       </div>
       <!-- ----------------------- BACK TO HOME -------------------------- -->

@@ -1,6 +1,6 @@
 <template>
-  <div class="w-full flex flex-col justify-center h-full">
-    <form class="w-[434px]">
+  <div class="w-full flex flex-col justify-start  h-full">
+    <form class="w-[434px]  overflow-y-auto py-4">
       <div class="input-wrapper" dir="ltr">
         <label class="input-label" for="username">نام و نام خانوادگی</label>
         <input type="text" name="username" id="username" class="input-field" />

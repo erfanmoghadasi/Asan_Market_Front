@@ -1,25 +1,35 @@
 <template>
-  <div class="w-full mb-12">
+  <div class="relative m-xl:max-w-[1180px w-auto ">
     <h3 class="font-bold text-3xl text-primary-b3 text-center mb-16">
       محصولات مشابه
     </h3>
-    <div class="flex justify-center gap-6">
-      <div v-for="card in newProducts" :key="card.id">
-        <UtilsCard
-          :image="card.image"
-          :category="card.category"
-          :description="card.description"
-          :rate="card.rate"
-          :price="card.price"
-          :liked="card.liked"
-          @like-handler="() => (card.liked = !card.liked)"
-        />
-      </div>
-    </div>
+    <swiper
+        :breakpoints="{
+          1280: {
+            slidesPerView: 4,
+          },
+        }"
+        class="mt-12 mb-20 py-12 flex items-center justify-between "
+        :modules="[]"
+        :slides-per-view="4"
+      >
+        <swiper-slide v-for="card in newProducts" :key="card.id">
+          <UtilsCard
+            :image="card.image"
+            :category="card.category"
+            :description="card.description"
+            :rate="card.rate"
+            :price="card.price"
+            :liked="card.liked"
+            @like-handler="card.liked = !card.liked"
+          />
+        </swiper-slide>
+      </swiper>
   </div>
 </template>
 
 <script setup lang="ts">
+
 const newProducts = ref([
   {
     id: 1,

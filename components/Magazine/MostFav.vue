@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[420px] min-w-[420px]">
+  <div class="w-[420px] min-w-[420px] m-xl:hidden">
     <h4 class="mb-12 font-bold text-2xl text-gray-b2">آخرین پست ها و مطالب</h4>
     <div
       v-for="item in favList"

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full flex gap-6 flex-wrap">
+  <div class="w-full flex gap-6 flex-wrap justify-between">
     <UtilsCard
       v-for="card in favProducts"
       :image="card.image"

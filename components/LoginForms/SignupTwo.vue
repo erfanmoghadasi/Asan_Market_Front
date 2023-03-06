@@ -4,7 +4,7 @@
       کد دریافتی را وارد نمایید
     </h3>
 
-    <form dir="ltr" class="w-[434px] flex justify-center gap-[10px]">
+    <form dir="ltr" class="w-full flex justify-center gap-[10px]">
       <div class="input-wrapper" dir="ltr">
         <input
           type="text"

@@ -1,15 +1,15 @@
 <template>
-  <div class="max-w-[1558px] mx-auto my-28 flex items-center gap-6 justify-between">
+  <div class="max-w-[1558px] m-xl:mx-20 m-xl:max-w-full mx-auto my-28 flex items-center gap-6 justify-between">
     <div
-      class="box relative w-44 h-44 rounded-2xl bg-gradient-to-br from-[#E9ECEF] to-[#FFFFFF] cursor-pointer"
+      class="box relative w-44 h-44 m-xl:w-32 m-xl:h-32 rounded-2xl bg-gradient-to-br from-[#E9ECEF] to-[#FFFFFF] cursor-pointer"
       v-for="item in boxList"
     >
       <nuxt-img
-        class="mx-auto -translate-y-8 transition-all hover:-translate-y-10"
+        class="mx-auto m-xl:scale-75 -translate-y-8 transition-all hover:-translate-y-10"
         :src="`/images/box-category/${item.image}.png`"
       />
       <p
-        class="absolute bottom-6 w-full font-medium text-center text-lg text-gray-b1"
+        class="absolute bottom-6 w-full font-medium text-center text-lg m-xl:text-sm text-gray-b1"
       >
         {{ item.title }}
       </p>

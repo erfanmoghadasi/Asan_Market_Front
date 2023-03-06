@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-[1558px] mx-auto  pb-28">
+  <div class="max-w-[1558px] m-xl:max-w-[1280px] mx-auto  pb-28">
     <div class="relative w-full flex flex-col">
       <h4 class="font-bold text-3xl text-primary-b3">رسانه و مطالب</h4>
       <p class="text-xl leading-[44px] text-[#8C8C8C] mt-1">
@@ -8,7 +8,7 @@
       </p>
       <div class="mt-12 mb-20 w-full flex items-center justify-between">
         <div
-          class="w-[292px] h-[388px] p-6 rounded-2xl shadow-[0px_1px_22px_0px_#004B8226]"
+          class="w-[292px] h-[388px] m-xl:w-[240px] p-6 rounded-2xl shadow-[0px_1px_22px_0px_#004B8226]"
           v-for="card in news"
           :key="card.id"
         >

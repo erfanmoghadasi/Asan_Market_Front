@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-32 mb-32 max-w-[1558px] mx-auto w-full flex flex-col items-center">
+  <div class="my-32  max-w-[1558px] mx-auto w-full flex flex-col items-center">
     <h3 class="font-bold text-3xl text-primary-b3 mb-24">
       دسته بندی های پر طرفدار
     </h3>
@@ -7,14 +7,14 @@
       <div
         v-for="product in products"
         :class="product.bg"
-        class="rounded-full mb-16 stone w-[189px] h-[189px] relative grid hover:scale-95 transition-all"
+        class="rounded-full mb-16 stone w-[189px] h-[189px] m-xl:w-[140px] m-xl:h-[140px] relative grid hover:scale-95 transition-all"
       >
         <nuxt-img
-          class="place-self-center scale-105 -translate-y-3"
+          class="place-self-center scale-105 m-xl:scale-[0.85] -translate-y-3"
           :src="product.image"
         />
         <p
-          class="w-full text-center font-bold text-gray-b1 text-xl absolute -bottom-[45px]"
+          class="w-full text-center font-bold text-gray-b1 text-xl m-xl:text-base absolute -bottom-[55px]"
         >
           {{ product.title }}
         </p>

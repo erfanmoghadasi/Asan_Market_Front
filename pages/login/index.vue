@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-[100vh] flex justify-center items-center">
+  <div class="w-full h-[99vh] flex justify-center items-center">
     <UtilsLoginBase
       :headerInfo="headersInfo[pageNumber]"
       :pageNumber="pageNumber"

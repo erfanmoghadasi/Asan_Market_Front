@@ -1,6 +1,6 @@
 <template>
   <div class="w-full bg-gray-b9 text-center">
-    <h5 class="font-bold text-3xl text-primary-b3 py-12">تولید کنندگان</h5>
+    <h5 class="font-bold text-3xl text-primary-b3 pt-12">تولید کنندگان</h5>
     <div class="flex w-full justify-between items-center h-52">
       <NuxtIcon
         class="text-[122px] opacity-60 text-[#BCBCBC]"
@@ -20,15 +20,20 @@
       />
       <NuxtIcon
         class="text-[122px] opacity-60 text-[#BCBCBC]"
-        name="main/sony"
+        name="main/verity"
+        filled
+      />
+      <NuxtIcon
+        class="text-[132px] opacity-60 text-[#BCBCBC]"
+        name="main/panatech"
       />
       <NuxtIcon
         class="text-[132px] opacity-60 text-[#BCBCBC]"
         name="main/nintendo"
       />
       <NuxtIcon
-        class="text-[150px] opacity-60 text-[#BCBCBC]"
-        name="main/microsoft"
+        class="text-[122px] opacity-60 text-[#BCBCBC]"
+        name="main/sony"
       />
       <NuxtIcon
         class="text-[36px] opacity-60 text-[#BCBCBC]"
@@ -37,16 +42,16 @@
       <NuxtIcon
         class="text-[150px] opacity-60 text-[#BCBCBC]"
         name="main/microsoft"
-      />
-      <NuxtIcon
-        class="text-[36px] opacity-60 text-[#BCBCBC]"
-        name="main/apple"
       />
     </div>
-    <div class="h-[330px] w-full box flex gap-[500px] justify-between">
-      <div class="h-full flex flex-col justify-center gap-4 items-start pr-40">
-        <h6 class="font-bold text-3xl text-white">آسان سرویس</h6>
-        <p class="font-light text-xl text-white text-right">
+    <div
+      class="h-[330px] m-xl:h-[250px] w-full box flex gap-[500px] m-xl:gap-40 justify-between"
+    >
+      <div
+        class="h-full flex flex-col justify-center gap-4 items-start pr-40 m-xl:pr-20"
+      >
+        <h6 class="font-bold text-3xl m-xl:text-xl text-white">آسان سرویس</h6>
+        <p class="font-light text-xl m-xl:text-base text-white text-right">
           خدمات گارانتی محصولات خریداری شده از آسان مارکت در آسان سرویس ، با پر
           کردن فرم گارانتی میتوانید از خدمات آسان سرویس بهره مند شوید
         </p>
@@ -54,7 +59,7 @@
           مشاهده سایت
         </button>
       </div>
-      <nuxt-img src="images/main/mask.png" />
+      <nuxt-img src="images/main/mask.png" class="" />
     </div>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="pt-[145px] flex justify-between">
+    <div class="pt-[100px] flex justify-between">
       <p class="font-bold text-[#999999] pr-4">
         فروشگاه آسان مارکت / کامپیوتر / سخت افزار و قطعات / رم ram
       </p>

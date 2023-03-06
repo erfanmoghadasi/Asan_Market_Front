@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[607px] flex flex-col gap-6">
+  <div class="w-[607px] m-xl:w-[450px] flex flex-col gap-6">
     <div
       class="relative grid place-items-center w-full h-[480px] border border-gray-b7"
     >
