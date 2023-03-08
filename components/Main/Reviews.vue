@@ -3,7 +3,7 @@
     <div
       v-for="post in reviews"
       :style="{ backgroundImage: `url(${post.bgImg})` }"
-      class="post w-[292px] h-[224px] xl:w-[220px] xl:h-[170px] rounded-[10px] overflow-hidden"
+      class="post w-[292px] h-[224px] m-xl:w-[220px] m-xl:h-[170px] rounded-[10px] overflow-hidden"
       :key="post.id"
     >
       <div class="flex w-full h-full items-end justify-between p-6 text-white">
