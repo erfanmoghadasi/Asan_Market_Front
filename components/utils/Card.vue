@@ -41,9 +41,10 @@
       >
       <NuxtIcon
         @click="likeHandler"
-        name="card/heart"
+        name="card/heart-sharp"
         class="text-2xl cursor-pointer transform transition-all active:scale-90"
-        :class="liked ? 'text-red-700' : 'text-white'"
+        :class="liked ? 'text-red-700' : 'stroke-black stroke-[10] text-transparent'"
+        
       />
     </div>
   </div>

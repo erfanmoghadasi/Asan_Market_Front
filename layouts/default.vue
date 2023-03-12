@@ -2,8 +2,11 @@
   <div class="w-full bg-white ">
     <nav
       @mouseover.self="() => (isCategoryOpen = false)"
-      class="fixed z-40 bg-white w-full 2xl:h-24 h-16 mb-16 px-7 flex items-center justify-center gap-20 shadow-[0px_2px_20px_rgba(0,75,130,0.14)]"
+      class="fixed z-40 bg-white w-full 2xl:h-24 h-16 mb-16 px-7  gap-20 shadow-[0px_2px_20px_rgba(0,75,130,0.14)]"
     >
+    <div class="w-full max-w-[1650px] mx-auto flex items-center justify-between h-full">
+
+
       <!-- ------------------ LOGO ------------------- -->
       <NuxtLink class="h-full" to="/">
         <div
@@ -70,6 +73,7 @@
 
       <!-- ------------------ LOGIN / SINGUP BUTTON ----------------------------- -->
       <LayoutLoginButon />
+    </div>
     </nav>
 
     <!-- ------------------------ CATEGORY LIST ------------------------------- -->

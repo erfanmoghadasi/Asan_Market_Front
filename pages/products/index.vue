@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="pt-[100px] flex justify-between">
+    <div class="pt-[110px] flex justify-between">
       <p class="font-bold text-[#999999] pr-4">
         فروشگاه آسان مارکت / کامپیوتر / سخت افزار و قطعات / رم ram
       </p>
       <p class="font-bold text-[#333333] pl-4">موجودی: 65,000,000 تومان</p>
     </div>
-    <div class="w-full pt-28 pb-24 flex">
+    <div class="w-full pt-20 pb-24 flex">
       <ProductsSidebarFilter />
       <!-- ----------------------- CARDS ----------------------- -->
       <div class="grow">

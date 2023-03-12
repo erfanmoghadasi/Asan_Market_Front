@@ -10,7 +10,7 @@
         class="flex gap-3 h-10 items-center text-primary-orginal cursor-pointer"
       >
         <span class="flex items-center max-h-10">
-          <NuxtIcon name="layout/nav-logo" class="text-5xl m-xl:text-2xl"
+          <NuxtIcon name="layout/nav-logo" class="text-5xl m-xl:text-3xl"
         /></span>
         <span class="max-h-10 flex items-center">
           <NuxtIcon
