@@ -1,9 +1,9 @@
 <template>
-  <div class="max-w-[1558px] m-xl:max-w-full m-xl:mx-20 mx-auto my-20 flex items-center justify-between relative">
+  <div class="2xl:max-w-[1558px] m-xl:max-w-full gap-6 m-xl:mx-20 mx-auto my-20 flex items-center justify-between relative">
     <div
       v-for="post in reviews"
       :style="{ backgroundImage: `url(${post.bgImg})` }"
-      class="post w-[292px] h-[224px] m-xl:w-[220px] m-xl:h-[170px] rounded-[10px] overflow-hidden"
+      class="post w-[292px] h-[224px] m-xl:min-w-[220px] m-xl:h-[170px] rounded-[10px] overflow-hidden"
       :key="post.id"
     >
       <div class="flex w-full h-full items-end justify-between p-6 text-white">

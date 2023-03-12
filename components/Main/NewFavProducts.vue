@@ -7,9 +7,10 @@
         <span class="text-primary-orginal font-bold">اینجا کلیک کنید</span>
       </p>
       <swiper
+      :space-between="24"
         :breakpoints="{
-          1280: {
-            slidesPerView: 4,
+          1600: {
+            slidesPerView: 5,
           },
         }"
         class="mt-12 mb-20 w-full flex items-center justify-between"
@@ -50,14 +51,15 @@
         <span class="text-primary-orginal font-bold">اینجا کلیک کنید</span>
       </p>
       <swiper
+      :space-between="24"
         :breakpoints="{
-          1280: {
-            slidesPerView: 4,
+          1600: {
+            slidesPerView: 5,
           },
         }"
         class="relative mt-12 mb-20 w-full flex items-center justify-between"
         :modules="[Navigation]"
-        :slides-per-view="5"
+        :slides-per-view="4"
         :navigation="{ nextEl: '.next-el', prevEl: '.prev-el' }"
       >
         <swiper-slide v-for="card in newProducts" :key="card.id">

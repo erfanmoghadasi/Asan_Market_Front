@@ -27,16 +27,18 @@
             class="h-full max-w-[650px] m-xl:max-w-[550px] items-end text-right flex flex-col justify-center gap-8"
           >
             <h3 class="font-black text-5xl m-xl:text-4xl leading-[60px]">
+              <p class="mb-4">پلتفــــرم</p>
               {{ slide.title }}
               <span class="text-[#72FFD5]"> محصولات دیجیتال</span>
             </h3>
-            <p class="font-light text-xl m-xl:text-lg">
+            <p class="font-light text-xl m-xl:text-lg text-gray-300">
               {{ slide.description }}
             </p>
             <button
-              class="c-btn-white bg-white w-44 h-14 text-primary-orginal text-xl font-bold"
+              class="c-btn-white flex items-center justify-center gap-2 bg-white w-44 h-14 text-primary-orginal text-xl font-bold"
             >
-              {{ slide.buttonTitle }}
+            <NuxtIcon name="main/arrow-left-header" filled class="text-2xl" />
+              <span>{{ slide.buttonTitle }}</span>
             </button>
           </div>
         </swiper-slide>
@@ -62,7 +64,7 @@ import { Navigation, Autoplay } from "swiper";
 const sliderItems = ref([
   {
     id: 1,
-    title: "پلتفــــرم خــــرید و فــــروش",
+    title: " خــــرید و فــــروش",
     description:
       "اگر خریدار عمده محصولات دیجیتالی هستید پلتفرم ما محصولاتی متنوع را برای شما فراهم آورده که میتوانید از فروشگاه تهیه و خرید کنید",
     buttonTitle: "شروع کنید",
@@ -70,7 +72,7 @@ const sliderItems = ref([
   },
   {
     id: 2,
-    title: "پلتفــــرم خــــرید و فــــروش",
+    title: " خــــرید و فــــروش",
     description:
       "اگر خریدار عمده محصولات دیجیتالی هستید پلتفرم ما محصولاتی متنوع را برای شما فراهم آورده که میتوانید از فروشگاه تهیه و خرید کنید",
     buttonTitle: "شروع کنید",

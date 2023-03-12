@@ -11,26 +11,39 @@
         <nuxt-img src="images/main/gift.png" />
       </div>
     </div>
-    <div
+
+    <swiper
+      :space-between="24"
+      :breakpoints="{
+        1600: {
+          slidesPerView: 4,
+        },
+      }"
       class="cart-box overflow-x-hidden flex justify-between gap-6 px-6 rounded-xl w-full select-none"
+      :modules="[Autoplay]"
+      :autoplay="{ delay: 2000}"
+      :slides-per-view="3"
+      :navigation="{ nextEl: '.next-el-new', prevEl: '.prev-el-new' }"
     >
-      <UtilsCard
-        v-for="card in cardsList"
-        :key="card.id"
-        :image="card.image"
-        :category="card.category"
-        :description="card.description"
-        :rate="card.rate"
-        :price="card.price"
-        :liked="card.liked"
-        @like-handler="card.liked = !card.liked"
-      />
-    </div>
+      <swiper-slide v-for="card in newProducts" :key="card.id">
+        <UtilsCard
+          :image="card.image"
+          :category="card.category"
+          :description="card.description"
+          :rate="card.rate"
+          :price="card.price"
+          :liked="card.liked"
+          @like-handler="card.liked = !card.liked"
+        />
+      </swiper-slide>
+    </swiper>
   </div>
 </template>
 
 <script setup lang="ts">
-const cardsList = ref([
+import { SwiperSlide, Swiper } from "swiper/vue";
+import { Autoplay } from "swiper";
+const newProducts = ref([
   {
     id: 1,
     image: "images/products/memory1.png",
@@ -68,25 +81,7 @@ const cardsList = ref([
     liked: false,
   },
   {
-    id: 1,
-    image: "images/products/memory1.png",
-    category: "ذخیره سازی",
-    description: "فلش مموری سامسونگ M20k11gh 16GB",
-    rate: 2,
-    price: "824,000",
-    liked: false,
-  },
-  {
-    id: 2,
-    image: "images/products/watch.png",
-    category: "ذخیره سازی",
-    description: "ساعت هوشمند طرح اپل مدل NG4521",
-    rate: 4,
-    price: "547,000",
-    liked: true,
-  },
-  {
-    id: 3,
+    id: 5,
     image: "images/products/memory2.png",
     category: "ذخیره سازی",
     description: "بلوتوث فندکی سفید برند وریتی",
@@ -95,12 +90,30 @@ const cardsList = ref([
     liked: false,
   },
   {
-    id: 4,
+    id: 6,
+    image: "images/products/memory2.png",
+    category: "ذخیره سازی",
+    description: "بلوتوث فندکی سفید برند وریتی",
+    rate: 1,
+    price: "908,000",
+    liked: false,
+  },
+  {
+    id: 7,
     image: "images/products/watch.png",
     category: "ذخیره سازی",
     description: "ساعت هوشمند طرح اپل مدل NG4521",
     rate: 5,
     price: "824,000",
+    liked: false,
+  },
+  {
+    id: 8,
+    image: "images/products/memory2.png",
+    category: "ذخیره سازی",
+    description: "بلوتوث فندکی سفید برند وریتی",
+    rate: 1,
+    price: "908,000",
     liked: false,
   },
 ]);

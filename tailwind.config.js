@@ -2,7 +2,7 @@ module.exports = {
   theme: {
     extend: {
       screens:{
-        'm-xl' : {'max' : '1401px'}
+        'm-xl' : {'max' : '1800px'}
       },
       colors: {
         primary: {

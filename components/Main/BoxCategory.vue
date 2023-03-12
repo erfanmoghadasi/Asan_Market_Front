@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-[1558px] m-xl:mx-20 m-xl:max-w-full mx-auto my-28 flex items-center gap-6 justify-between">
     <div
-      class="box relative w-44 h-44 m-xl:w-32 m-xl:h-32 rounded-2xl bg-gradient-to-br from-[#E9ECEF] to-[#FFFFFF] cursor-pointer"
+      class="box relative w-44 h-44 aspect-square	 m-xl:w-32 m-xl:h-32 rounded-2xl bg-gradient-to-br from-[#E9ECEF] to-[#FFFFFF] cursor-pointer"
       v-for="item in boxList"
     >
       <nuxt-img
