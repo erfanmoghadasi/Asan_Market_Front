@@ -1,7 +1,7 @@
 <template>
-      <div class="w-[292px] min-w-[292px] m-xl:min-w-[240px]  flex flex-col gap-3">
+      <div class="w-[292px] min-w-[292px] m-xl:min-w-[200px]  flex flex-col gap-3">
       <div
-        class="w-full text-xl font-bold flex items-center justify-between px-4 h-[88px] bg-primary-w2 text-white rounded-[10px]"
+        class="w-full text-xl m-xl:text-sm  font-bold flex items-center justify-between px-4 h-[88px] m-xl:h-[60px] bg-primary-w2 text-white rounded-[10px]"
       >
         <h6>دسته بندی مطالب</h6>
         <NuxtIcon filled name="magazine/arrow-down-circle" />
@@ -9,9 +9,9 @@
       <div
     v-for="item in categoryList"
     @click="handleCategory"
-    class="cursor-pointer w-full bg-[#F8F8F8] h-14 rounded-[10px] flex items-center justify-between px-4 hover:shadow transition-all"
+    class="cursor-pointer w-full bg-[#F8F8F8] h-14 m-xl:h-12 rounded-[10px] flex items-center justify-between px-4 hover:shadow transition-all"
   >
-    <p class="font-medium text-xl text-[#8C8C8C] m-xl:text-lg">{{ item.title }}</p>
+    <p class="font-medium text-xl m-xl:text-base text-[#8C8C8C]">{{ item.title }}</p>
     <span
       class="w-3 h-3 rounded-full"
       :class="item.isClicked ? 'bg-primary-w2' : 'bg-[#D9D9D9]'"

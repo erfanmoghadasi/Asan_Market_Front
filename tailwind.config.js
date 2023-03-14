@@ -1,4 +1,7 @@
 module.exports = {
+  plugins: [
+    require('@headlessui/tailwindcss')
+  ],
   theme: {
     extend: {
       screens:{

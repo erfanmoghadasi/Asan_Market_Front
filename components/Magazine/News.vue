@@ -3,8 +3,8 @@
     <div v-for="news in newsList" class="w-full flex gap-6 justify-between">
       <nuxt-img width="241" :src="news.image" />
       <div class="grow py-6 flex flex-col justify-between">
-        <h3 class="font-bold text-2xl text-gray-b2">{{ news.title }}</h3>
-        <p class="text-gray-b4">{{ news.description }}</p>
+        <h3 class="font-bold text-2xl m-xl:text-lg text-gray-b2">{{ news.title }}</h3>
+        <p class="text-gray-b4 m-xl:text-sm">{{ news.description }}</p>
         <div
           class="text-primary-w2 flex items-center gap-2 cursor-pointer drop-shadow-sm"
         >

@@ -24,7 +24,7 @@
         >
           <HeadlessDialogPanel
             as="div"
-            class="flex flex-col items-start fixed top-[0px] left-1/2 -translate-x-1/2 w-[642px] max-h-[778px] overflow-y-auto bg-white rounded-[10px] mx-auto mt-32 z-50"
+            class="flex flex-col items-start fixed top-[100px] left-1/2 -translate-x-1/2 w-[642px] max-h-[770px] m-xl:max-h-[500px] overflow-y-auto bg-white rounded-[10px] mx-auto z-50"
           >
             <HeadlessDialogTitle class="w-full pb-6 border-b-2 border-gray-b7">
               <div class="pt-10 px-10">

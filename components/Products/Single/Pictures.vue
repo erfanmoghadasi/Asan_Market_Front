@@ -27,7 +27,7 @@
     <div class="flex items-center justify-between gap-3">
       <span
         v-for="p in 5"
-        class="w-[112px] h-[112px] bg-gray-b8 grid place-items-center"
+        class="w-full aspect-square bg-gray-b8 grid place-items-center"
       >
         <NuxtIcon name="single-product/gallery-slash" filled class="text-2xl" />
       </span>

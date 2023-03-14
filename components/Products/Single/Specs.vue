@@ -1,58 +1,58 @@
 <template>
   <div class="">
     <!-- --------------------------- SPECIFICATIONS --------------------- -->
-    <div class="flex items-start gap-52 mb-24">
+    <div class="flex items-start gap-52 m-xl:gap-32 mb-24">
       <div class="flex items-center gap-3">
         <span class="w-2 h-8 bg-primary-orginal rounded-full" />
-        <h4 class="font-bold text-xl text-primary-orginal">مشخصات</h4>
+        <h4 class="font-bold text-xl m-xl:text-lg text-primary-orginal">مشخصات</h4>
       </div>
-      <ul class="flex flex-col w-[914px]">
+      <ul class="flex flex-col w-[914px] m-xl:w-[800px]">
         <li class="w-full pb-6 mb-6 border-b border-gray-b7 flex">
           <div class="flex items-center gap-3 w-1/3">
             <span class="w-2 h-2 bg-gray-b4 rounded-full" />
-            <p class="text-gray-b4 font-medium">مناسب برای</p>
+            <p class="text-gray-b4 font-medium m-xl:text-sm">مناسب برای</p>
           </div>
-          <p class="w-2/3 text-lg text-gray-b2">آقایان و بانوان</p>
+          <p class="w-2/3 text-lg m-xl:text-base text-gray-b2">آقایان و بانوان</p>
         </li>
         <li class="w-full pb-6 mb-6 border-b border-gray-b7 flex">
           <div class="flex items-center gap-3 w-1/3">
             <span class="w-2 h-2 bg-gray-b4 rounded-full" />
-            <p class="text-gray-b4 font-medium">نوع کاربری</p>
+            <p class="text-gray-b4 font-medium m-xl:text-sm">نوع کاربری</p>
           </div>
-          <p class="w-2/3 text-lg text-gray-b2">رسمی , روزمره , ورزشی</p>
+          <p class="w-2/3 text-lg m-xl:text-base text-gray-b2">رسمی , روزمره , ورزشی</p>
         </li>
         <li class="w-full pb-6 mb-6 border-b border-gray-b7 flex">
           <div class="flex items-center gap-3 w-1/3">
             <span class="w-2 h-2 bg-gray-b4 rounded-full" />
-            <p class="text-gray-b4 font-medium">ابعاد قاب</p>
+            <p class="text-gray-b4 font-medium m-xl:text-sm">ابعاد قاب</p>
           </div>
-          <p class="w-2/3 text-lg text-gray-b2">۹.۸×۴۳.۳×۴۴.۴ میلی‌متر</p>
+          <p class="w-2/3 text-lg m-xl:text-base text-gray-b2">۹.۸×۴۳.۳×۴۴.۴ میلی‌متر</p>
         </li>
         <li class="w-full pb-6 mb-6 border-b border-gray-b7 flex">
           <div class="flex items-center gap-3 w-1/3">
             <span class="w-2 h-2 bg-gray-b4 rounded-full" />
-            <p class="text-gray-b4 font-medium">وزن</p>
+            <p class="text-gray-b4 font-medium m-xl:text-sm">وزن</p>
           </div>
-          <p class="w-2/3 text-lg text-gray-b2">۳۲.۵ گرم</p>
+          <p class="w-2/3 text-lg m-xl:text-base text-gray-b2">۳۲.۵ گرم</p>
         </li>
         <li class="w-full pb-6 mb-6 border-b border-gray-b7 flex">
           <div class="flex items-center gap-3 w-1/3">
             <span class="w-2 h-2 bg-gray-b4 rounded-full" />
-            <p class="text-gray-b4 font-medium">فرم صفحه</p>
+            <p class="text-gray-b4 font-medium m-xl:text-sm">فرم صفحه</p>
           </div>
-          <p class="w-2/3 text-lg text-gray-b2">دایره</p>
+          <p class="w-2/3 text-lg m-xl:text-base text-gray-b2">دایره</p>
         </li>
       </ul>
     </div>
 
     <!-- --------------------------- DESCRIPTION --------------------- -->
-    <div class="flex items-start gap-52 mb-24">
+    <div class="flex items-start gap-52 m-xl:gap-32 mb-24">
       <div class="flex items-center gap-3">
         <span class="w-2 h-8 bg-primary-orginal rounded-full" />
-        <h4 class="font-bold text-xl text-primary-orginal">توضیحات</h4>
+        <h4 class="font-bold text-xl m-xl:text-lg text-primary-orginal">توضیحات</h4>
       </div>
       <p
-        class="w-[914px] max-h-[578px] overflow-y-auto pl-6 text-xl leading-9 text-[#595959]"
+        class="w-[914px] m-xl:w-[800px] max-h-[578px] overflow-y-auto pl-6 text-xl m-xl:text-lg m-xl:leading-10 leading-9 text-[#595959]"
       >
         این ساعت طراحی ظریف و زیبایی دارد. فرم صفحه این مدل دایره‌ای بوده و برای
         شما که ساعت گرد را به ساعت‌های مستطیلی ترجیح می‌دهید بسیار جذاب

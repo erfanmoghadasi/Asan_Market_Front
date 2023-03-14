@@ -17,6 +17,7 @@
     "nuxt-headlessui": "^1.1.1"
   },
   "dependencies": {
+    "@headlessui/tailwindcss": "^0.1.2",
     "nuxt-icons": "^3.1.0",
     "nuxt-swiper": "^0.1.9",
     "vee-validate": "^4.7.3"

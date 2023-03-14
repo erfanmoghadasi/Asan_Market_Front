@@ -49,6 +49,7 @@
 <script setup lang="ts">
 import Profile from "/components/Account/Profile.vue";
 import Favourites from "/components/Account/Favourites.vue";
+import Messages from "/components/Account/Messages.vue";
 
 const isLogoutModal = ref(false);
 const selectedNum = ref(1);
@@ -59,6 +60,9 @@ const currentComponent = computed(() => {
 
     case 2:
       return Favourites;
+
+    case 6:
+      return Messages;
   }
 });
 const navList = ref([

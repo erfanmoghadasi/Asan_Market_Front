@@ -63,7 +63,7 @@
         </p>
       </div>
       <!-- ----------------------------- LEFT SIDE ------------------------ -->
-      <div class="m-xl:hidden">
+      <div class="m-xl:hiddend">
         <MagazineMostFav />
         <div class="flex min-h-fit justify-between flex-col gap-6">
           <nuxt-img class="rounded-[10px]" src="images/magazine/ad.png" />
@@ -109,7 +109,7 @@
       <div class="flex items-center justify-between gap-6">
         <div v-for="news in newsList" class="w-[292px] h-[372px]">
           <nuxt-img :src="news.image" />
-          <p class="leading-8 mt-4">{{ news.title }}</p>
+          <p class="leading-8 mt-4 m-xl:text-sm">{{ news.title }}</p>
         </div>
       </div>
     </div>

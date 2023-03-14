@@ -1,18 +1,18 @@
 <template>
   <div>
     <div class="pt-[110px] flex justify-between">
-      <p class="font-bold text-[#999999] pr-4">
+      <p class="font-bold text-[#999999] pr-4 m-xl:text-sm">
         فروشگاه آسان مارکت / کامپیوتر / سخت افزار و قطعات / رم ram
       </p>
-      <p class="font-bold text-[#333333] pl-4">موجودی: 65,000,000 تومان</p>
+      <p class="font-bold text-[#333333] pl-4 m-xl:text-sm">موجودی: 65,000,000 تومان</p>
     </div>
-    <div class="w-full pt-20 pb-24 flex">
+    <div class="w-full pt-10 pb-24 max-h-fit flex relative">
       <ProductsSidebarFilter />
       <!-- ----------------------- CARDS ----------------------- -->
       <div class="grow">
         <!-- ------------------------------ SORTING -------------------------- -->
         <div
-          class="grow ml-6 pb-4 mb-10 font-bold text-[#999999] flex items-center gap-4 border-b-2 border-[#EBEBEB]"
+          class="grow ml-6 pb-4 mb-10 m-xl:text-sm font-bold text-[#999999] flex items-center gap-4 border-b-2 border-[#EBEBEB]"
         >
           <h6 class="flex items-center gap-2 text-[#333333]">
             <NuxtIcon name="filter/sort" />
@@ -35,7 +35,7 @@
               <ProductsFilteredProducts />
             </template>
             <template #fallback>
-              <div class="w-full flex flex-wrap gap-6 justify-around pl-6">
+              <div class="w-full grid auto-cols-min grid-cols-3 gap-6 2xl:grid-cols-4 3xl:grid-cols-5 pl-6">
                 <UtilsSkeletonCard v-for="s in 16" />
               </div>
             </template>

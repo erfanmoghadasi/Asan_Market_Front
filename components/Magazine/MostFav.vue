@@ -1,27 +1,27 @@
 <template>
-  <div class="w-[420px] min-w-[420px] m-xl:hidden">
-    <h4 class="mb-12 font-bold text-2xl text-gray-b2">آخرین پست ها و مطالب</h4>
+  <div class="w-[420px] min-w-[420px] m-xl:min-w-[300px] m-xl:w-[300px]">
+    <h4 class="mb-12 font-bold text-2xl m-xl:text-lg text-gray-b2">آخرین پست ها و مطالب</h4>
     <div
       v-for="item in favList"
       :key="item.id"
-      class="h-32 w-full flex gap-6 mb-6"
+      class=" min-h-fit w-full flex items-start gap-6 mb-6"
     >
       <nuxt-img width="123" :src="item.image" />
       <div class="flex flex-col justify-between py-3">
         <h5 class="font-bold text-gray-b2">{{ item.title }}</h5>
-        <p class="text-gray-b4">{{ item.description }}</p>
+        <p class="text-gray-b4 m-xl:text-sm">{{ item.description }}</p>
       </div>
     </div>
-    <h4 class="my-12 font-bold text-2xl text-gray-b2">پر بازدیدترین مطالب</h4>
+    <h4 class="my-12 font-bold text-2xl m-xl:text-lg text-gray-b2">پر بازدیدترین مطالب</h4>
     <div
       v-for="item in favList"
       :key="item.id"
-      class="h-32 w-full flex gap-6 mb-6"
+      class=" min-h-fit w-full flex items-start gap-6 mb-6"
     >
       <nuxt-img width="123" :src="item.image" />
       <div class="flex flex-col justify-between py-3">
         <h5 class="font-bold text-gray-b2">{{ item.title }}</h5>
-        <p class="text-gray-b4">{{ item.description }}</p>
+        <p class="text-gray-b4 m-xl:text-sm">{{ item.description }}</p>
       </div>
     </div>
   </div>

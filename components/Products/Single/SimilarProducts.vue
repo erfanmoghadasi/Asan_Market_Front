@@ -1,34 +1,51 @@
 <template>
-  <div class="relative m-xl:max-w-[1180px w-auto ">
+  <div class="relative w-full px-20 m-xl:px-0 m-xl:max-w-[1280px] mx-auto flex flex-col">
     <h3 class="font-bold text-3xl text-primary-b3 text-center mb-16">
       محصولات مشابه
     </h3>
-    <swiper
-        :breakpoints="{
-          1280: {
-            slidesPerView: 4,
-          },
-        }"
-        class="mt-12 mb-20 py-12 flex items-center justify-between "
-        :modules="[]"
-        :slides-per-view="4"
-      >
-        <swiper-slide v-for="card in newProducts" :key="card.id">
-          <UtilsCard
-            :image="card.image"
-            :category="card.category"
-            :description="card.description"
-            :rate="card.rate"
-            :price="card.price"
-            :liked="card.liked"
-            @like-handler="card.liked = !card.liked"
-          />
-        </swiper-slide>
-      </swiper>
+    <div class="w-full overflow-visible m-xl:px-16 relative mt- mb-20 flex items-center justify-between">
+      <swiper
+        :space-between="24"
+          :breakpoints="{
+            1800: {
+              slidesPerView: 5,
+            },
+          }"
+          class=""
+          :modules="[Navigation]"
+          :slides-per-view="4"
+          :navigation="{ nextEl: '.next-el', prevEl: '.prev-el' }"
+        >
+          <swiper-slide v-for="card in newProducts" :key="card.id" class="p-2">
+            <UtilsCard
+              :image="card.image"
+              :category="card.category"
+              :description="card.description"
+              :rate="card.rate"
+              :price="card.price"
+              :liked="card.liked"
+              @like-handler="card.liked = !card.liked"
+            />
+          </swiper-slide>
+        </swiper>
+    </div>
+      <NuxtIcon
+        name="swiper/arrow-circle-right"
+        filled
+        class="next-el text-[40px] absolute top-[50%] -right-4 cursor-pointer"
+      />
+      <NuxtIcon
+        name="swiper/arrow-circle-left"
+        filled
+        class="prev-el text-[40px] absolute top-[50%] -left-4 cursor-pointer"
+      />
   </div>
 </template>
 
 <script setup lang="ts">
+import { Navigation } from "swiper";
+import { SwiperSlide, Swiper } from "swiper/vue";
+
 
 const newProducts = ref([
   {

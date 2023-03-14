@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[292px] mx-6 py-8 border-2 border-[#EBEBEB] rounded-[10px]">
+  <div class=" top-2 right-0  h-fit overflow-y-auto w-[292px] mx-6 py-8 border-2 border-[#EBEBEB] rounded-[10px]">
     <h3 class="text-[22px] px-6 text-[#666666] flex items-center gap-2 mb-8">
       <NuxtIcon filled name="filter/filter" />
       <span>فیلترها</span>
@@ -13,7 +13,7 @@
         <span>دسته بندی ها</span>
         <NuxtIcon filled name="filter/arrow" />
       </h6>
-      <div class="w-full max-h-[340px] overflow-y-hidden">
+      <div class="w-full max-h-[340px] overflow-y-auto">
         <ul class="w-full">
           <li class="list-item border-b border-[#EBEBEB]">
             <NuxtIcon filled name="filter/arrow-down" />
@@ -56,7 +56,7 @@
     <!-- ----------------------- BRAND ----------------------- -->
     <div class="list-section">
       <h6
-        class="font-bold text-lg text-[#333333] flex items-center justify-between mb-8"
+        class="font-bold text-lg  text-[#333333] flex items-center justify-between mb-8"
       >
         <span>برند</span>
         <NuxtIcon filled name="filter/arrow" />
@@ -118,7 +118,7 @@ const isMenuOpen = ref(false);
   @apply py-4 px-6 w-full border-b-2 border-[#EBEBEB];
 }
 .list-item {
-  @apply flex items-center gap-3 font-bold text-lg text-[#666666] py-4;
+  @apply cursor-pointer flex items-center gap-3 font-bold text-lg m-xl:text-sm text-[#666666] py-4;
 }
 
 .switch {
