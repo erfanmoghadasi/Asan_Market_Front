@@ -1,5 +1,5 @@
 <template>
-    <div class="w-[766px]s h-[499px]s py-12 px-36 flex flex-col justify-center">
+    <div class=" max-w-[766px] py-12 px-36 flex flex-col justify-center">
       <HeadlessDialogTitle class="text-center mb-10">
         <div class="flex items-center justify-center gap-4 mb-2">
           <NuxtIcon
