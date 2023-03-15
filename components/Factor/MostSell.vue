@@ -5,13 +5,16 @@
         خریداران این محصولات را خریده اند
       </h4>
       <swiper
-        class="mt-12 w-full flex items-center justify-between"
-        :slides-per-view="5"
+      :space-between="24"
         :breakpoints="{
-        1280:{
-          slidesPerView:4
-        }
-      }"
+          1600: {
+            slidesPerView: 5,
+          },
+        }"
+        class="mt-12 mb-20 w-full flex items-center justify-between"
+        :modules="[Navigation]"
+        :slides-per-view="4"
+        :navigation="{ nextEl: '.next-el-new', prevEl: '.prev-el-new' }"
       >
         <swiper-slide v-for="card in newProducts" :key="card.id">
           <UtilsCard
@@ -32,6 +35,9 @@
 </template>
 
 <script setup lang="ts">
+import { SwiperSlide, Swiper } from "swiper/vue";
+import { Navigation } from "swiper";
+
 const newProducts = ref([
   {
     id: 1,

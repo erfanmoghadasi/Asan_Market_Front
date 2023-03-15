@@ -26,19 +26,19 @@
         درصد گذشته حال و آینده
       </p>
       <div class="mt-10 flex flex-col gap-4  m-xl:text-sm">
-        <div class="flex gap-[14px] items-center">
+        <div class="flex gap-[14px] items-start">
           <span>
             <NuxtIcon name="layout/call" filled class="text-5" />
           </span>
           <p>تلفن: 67341</p>
         </div>
-        <div class="flex gap-[14px] items-center">
+        <div class="flex gap-[14px] items-start">
           <span>
             <NuxtIcon name="layout/sms" filled class="text-5" />
           </span>
           <p>کدپستی: 1136834843</p>
         </div>
-        <div class="flex gap-[14px] items-center">
+        <div class="flex gap-[14px] items-start">
           <span>
             <NuxtIcon name="layout/location" filled class="text-5" />
           </span>

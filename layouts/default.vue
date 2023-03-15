@@ -33,7 +33,7 @@
             <NuxtIcon
               name="layout/menu"
               filled
-              class="2xl:text-2xl text-base"
+              class="2xl:text-2xl text-sm"
             />
           </span>
           <p class="font-medium 2xl:text-lg m-xl:text-sm">دسته بندی کالاها</p>
@@ -66,7 +66,7 @@
           <NuxtIcon
             name="layout/search"
             filled
-            class="text-2xl cursor-pointer"
+            class="text-2xl m-xl:text-lg cursor-pointer"
           />
         </span>
       </div>

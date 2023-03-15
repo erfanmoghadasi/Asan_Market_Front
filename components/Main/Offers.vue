@@ -1,8 +1,8 @@
 <template>
   <div
-    class="max-w-[1558px] m-xl:mx-20 mx-auto my-20 px-6 h-[454px] bg-gray-b8 rounded-2xl flex items-center justify-between"
+    class="max-w-[1558px] m-xl:mx-20 mx-auto my-20 px-6 h-[454px] m-xl:h-[410px] bg-gray-b8 rounded-2xl flex items-center justify-between"
   >
-    <div class="w-[350px] mx-auto">
+    <div class="w-[350px] m-xl:w-[310px] mx-auto">
       <div class="gift-cart w-44 mx-auto relative z-20">
         <p class="font-black text-3xl text-primary-b4 leading-[50px]">
           پیشنهادهای شگفت انگیز

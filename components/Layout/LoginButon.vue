@@ -1,7 +1,7 @@
 <template>
   <NuxtLink to="/login">
   <div
-    class="c-btn hover:scale-95 hover:border-primary-w4 transition-all flex items-center px-3 w-[177px] m-xl:w-[140px] h-12 m-xl:h-10 bg-primary-orginal"
+    class="c-btn hover:scale-95 hover:border-primary-w4 transition-all flex items-center px-3 w-[177px] m-xl:w-[140px] h-12 m-xl:h-9 bg-primary-orginal"
   >
     <span>
       <NuxtIcon name="layout/login" filled class="text-2xl m-xl:text-base" />

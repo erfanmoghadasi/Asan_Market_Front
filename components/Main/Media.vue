@@ -1,14 +1,14 @@
 <template>
-  <div class="max-w-[1558px] m-xl:mx-20 mx-auto  pb-28">
+  <div class="max-w-[1558px] m-xl:mx-20 mx-auto m-xl:pb-0 pb-28">
     <div class="relative w-full flex flex-col">
-      <h4 class="font-bold text-3xl text-primary-b3">رسانه و مطالب</h4>
-      <p class="text-xl leading-[44px] text-[#8C8C8C] mt-1">
+      <h4 class="font-bold text-3xl m-xl:text-2xl text-primary-b3">رسانه و مطالب</h4>
+      <p class="text-xl m-xl:text-lg leading-[44px] text-[#8C8C8C] mt-1">
         برای مشاهده ی آخرین مطالب رسانه و مطالب
         <span class="text-primary-orginal font-bold">اینجا کلیک کنید</span>
       </p>
       <div class="mt-12 mb-20 w-full gap-6 flex items-center justify-between">
         <div
-          class="w-[292px] h-[388px] p-6 rounded-2xl shadow-[0px_1px_22px_0px_#004B8226]"
+          class="w-[292px] h-[388px] p-6 m-xl:p-3 rounded-2xl shadow-[0px_1px_22px_0px_#004B8226]"
           v-for="card in news"
           :key="card.id"
         >

@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full h-[1540px] bg-[#F6F8FA] px-44 m-xl:px-24 py-20">
+  <div class="w-full bg-[#F6F8FA] px-44 m-xl:px-24 pt-16">
     <div class="max-w-[1558px] mx-auto relative w-full flex flex-col">
-      <h4 class="font-bold text-3xl text-primary-b3">جدیدترین محصولات</h4>
-      <p class="text-xl leading-[44px] text-[#8C8C8C] mt-1">
+      <h4 class="font-bold text-3xl m-xl:text-2xl text-primary-b3">جدیدترین محصولات</h4>
+      <p class="text-xl m-xl:text-lg leading-[44px] text-[#8C8C8C] mt-1">
         برای مشاهده ی جدیدترین محصولات
         <span class="text-primary-orginal font-bold">اینجا کلیک کنید</span>
       </p>
@@ -33,20 +33,20 @@
       <NuxtIcon
         name="swiper/arrow-circle-right"
         filled
-        class="next-el-new text-[40px] absolute top-[50%] -right-14 cursor-pointer"
+        class="next-el-new text-[40px] absolute top-[50%] m-xl:scale-75 -right-14 cursor-pointer"
       />
       <NuxtIcon
         name="swiper/arrow-circle-left"
         filled
-        class="prev-el-new text-[40px] absolute top-[50%] -left-14 cursor-pointer"
+        class="prev-el-new text-[40px] absolute top-[50%] m-xl:scale-75 -left-14 cursor-pointer"
       />
     </div>
 
     <MainWeekFav />
 
-    <div class="max-w-[1558px] mx-auto relative w-full flex flex-col">
-      <h4 class="font-bold text-3xl text-primary-b3">محبوب ترین محصولات</h4>
-      <p class="text-xl leading-[44px] text-[#8C8C8C] mt-1">
+    <div class="max-w-[1558px] mt-16 mx-auto relative w-full flex flex-col">
+      <h4 class="font-bold text-3xl m-xl:text-2xl text-primary-b3">محبوب ترین محصولات</h4>
+      <p class="text-xl m-xl:text-lg leading-[44px] text-[#8C8C8C] mt-1">
         برای مشاهده ی محبوب ترین محصولات
         <span class="text-primary-orginal font-bold">اینجا کلیک کنید</span>
       </p>
@@ -77,12 +77,12 @@
       <NuxtIcon
         name="swiper/arrow-circle-right"
         filled
-        class="next-el text-[40px] absolute top-[50%] -right-14 cursor-pointer"
+        class="next-el text-[40px] absolute top-[50%] m-xl:scale-75 -right-14 cursor-pointer"
       />
       <NuxtIcon
         name="swiper/arrow-circle-left"
         filled
-        class="prev-el text-[40px] absolute top-[50%] -left-14 cursor-pointer"
+        class="prev-el text-[40px] absolute top-[50%] m-xl:scale-75 -left-14 cursor-pointer"
       />
     </div>
   </div>

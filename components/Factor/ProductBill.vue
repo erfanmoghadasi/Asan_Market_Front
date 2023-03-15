@@ -8,31 +8,31 @@
     <nuxt-img :src="props.image" />
 </div>
     <div class="h-full flex flex-col justify-between gap-4  ">
-            <h5 class="font-bold text-xl text-[#333333] mb-8">فلش مموری سامسونگ M20k11gh 16GB</h5>
-            <p class="text-gray-b2 flex items-center justify-start gap-4 text-lg m-xl:text-base">
+            <h5 class="font-bold text-xl m-xl:text-lg text-[#333333] mb-8">فلش مموری سامسونگ M20k11gh 16GB</h5>
+            <p class="text-gray-b2 flex items-center justify-start gap-4 text-lg m-xl:text-sm">
                 <NuxtIcon name="factor/shop" filled />
                 <span class=" ">فروشنده فروشگاه اسپیس</span>
             </p>
-            <p class="text-gray-b2 flex items-center justify-start gap-4 text-lg m-xl:text-base">
+            <p class="text-gray-b2 flex items-center justify-start gap-4 text-lg m-xl:text-sm">
                 <NuxtIcon name="factor/3d-square" filled />
                 <span class=" ">خرید کارتنی | حداقل 20 کارتن | تعداد در کارتن: 100 عدد</span>
             </p>
-            <p class="text-gray-b2 flex items-center justify-start gap-4 text-lg m-xl:text-base">
+            <p class="text-gray-b2 flex items-center justify-start gap-4 text-lg m-xl:text-sm">
                 <NuxtIcon name="factor/shield-tick" filled />
                 <span class=" ">گارانتی اصالت و سلامت فیزیکی کالا</span>
             </p>
-            <p class="text-gray-b2 flex items-center justify-start gap-4 text-lg m-xl:text-base">
+            <p class="text-gray-b2 flex items-center justify-start gap-4 text-lg m-xl:text-sm">
                 <NuxtIcon name="factor/box-tick" filled />
                 <span class=" ">موجود در انبار فروشنده</span>
             </p>
-            <p class="relative text-gray-b2 flex items-center justify-start gap-4 text-lg m-xl:text-base">
+            <p class="relative text-gray-b2 flex items-center justify-start gap-4 text-lg m-xl:text-sm">
                 <NuxtIcon name="factor/dot-line" class="text-[75px] absolute -right-7" filled />
                 <div class="pr-10 flex flex-col gap-5 text-gray-b4">
-                    <p class=" flex items-center justify-start gap-4 text-lg m-xl:text-base ">
+                    <p class=" flex items-center justify-start gap-4 text-lg m-xl:text-sm ">
                         <NuxtIcon filled name="factor/truck" />
                         <span>ارسال از آسان مارکت پس از دریافت از فروشنده</span>
                     </p>
-                    <p class=" flex items-center justify-start gap-4 text-lg m-xl:text-base ">
+                    <p class=" flex items-center justify-start gap-4 text-lg m-xl:text-sm ">
                         <NuxtIcon filled name="factor/profile-circle" />
                         <span>ارسال از فروشنده پس از تایید نهایی 1-2 روز دیگر</span>
                     </p>
@@ -47,9 +47,9 @@
         <div class="flex flex-col justify-between gap-4 w-48 m-xl:w-36 ">
             <p class="font-bold text-xl m-xl:text-lg text-gray-b2 text-left">5,000,000 تومان</p>
             <div class=" ">
-                <div class="w-full mb-4 h-10 bg-gray-b8 rounded-lg text-gray-b3 grid place-items-center">2 کارتن = 200 عدد</div>
+                <div class="w-full m-xl:text-sm mb-4 h-10 bg-gray-b8 rounded-lg text-gray-b3 grid place-items-center">2 کارتن = 200 عدد</div>
                 <div class="w-full flex gap-4 h-12 max-w-full">
-                    <div class="w-full text-primary-orginal text-2xl m-xl:text-lg flex items-center justify-between px-4 border-2 border-gray-b7 rounded-lg">
+                    <div class="w-full text-primary-orginal text-2xl m-xl:text-base flex items-center justify-between px-4 border-2 border-gray-b7 rounded-lg">
                         <button>+</button>
                         <span>2</span>
                         <button>-</button>
