@@ -1,8 +1,8 @@
 <template>
   <div
-    class="bg-white cursor-pointer select-none w-[292px]z min-w-[292px] m-xl:w-[280px]z m-xl:min-w-[280px]  h-[406px] m-xl:h-[370px] p-6 pb-8 rounded-[10px] flex flex-col justify-between card-shadow"
+    class="bg-white cursor-pointer select-none w-[292px]z min-w-[292px] m-xl:w-[280px]z m-xl:min-w-[255px]  h-[406px] m-xl:h-[370px] p-6 pb-8 rounded-[10px] flex flex-col justify-between card-shadow"
   >
-    <nuxt-img :src="image" class="h-[160px] w-fit mx-auto select-none" />
+    <nuxt-img :src="image" class="h-[160px] w-fit mx-auto select-none m-xl:scale-[.8]" />
     <div
       class="flex flex-col justify-between h-[100px] max-h-[100px] select-none"
     >

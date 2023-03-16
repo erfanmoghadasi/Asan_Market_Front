@@ -1,6 +1,6 @@
 <template>
-  <div class=" top-2 right-0  h-fit overflow-y-auto w-[292px] mx-6 py-8 border-2 border-[#EBEBEB] rounded-[10px]">
-    <h3 class="text-[22px] px-6 text-[#666666] flex items-center gap-2 mb-8">
+  <div class=" top-2 right-0  h-fit overflow-y-auto w-[292px] m-xl:w-[260px] mx-6 py-8 border-2 border-[#EBEBEB] rounded-[10px]">
+    <h3 class="text-[22px] m-xl:text-lg px-6 text-[#666666] flex items-center gap-2 mb-8 m-xl:mb-0">
       <NuxtIcon filled name="filter/filter" />
       <span>فیلترها</span>
     </h3>
@@ -8,7 +8,7 @@
     <!-- -------------------- CATEGORY ---------------------------- -->
     <div class="list-section">
       <h6
-        class="font-bold text-lg text-[#333333] flex items-center justify-between my-8"
+        class="font-bold text-lg m-xl:text-base text-[#333333] flex items-center justify-between my-8"
       >
         <span>دسته بندی ها</span>
         <NuxtIcon filled name="filter/arrow" />
@@ -16,13 +16,13 @@
       <div class="w-full max-h-[340px] overflow-y-auto">
         <ul class="w-full">
           <li class="list-item border-b border-[#EBEBEB]">
-            <NuxtIcon filled name="filter/arrow-down" />
-            <span>همه کالا ها</span>
+            <NuxtIcon class=" m-xl:text-xs" filled name="filter/arrow-down" />
+            <span class=" m-xl:text-xs">همه کالا ها</span>
           </li>
           <div class="">
             <li class="list-item border-b border-[#EBEBEB]">
-              <NuxtIcon filled name="filter/arrow-down" />
-              <span>کامپیوتر</span>
+              <NuxtIcon class=" m-xl:text-xs" filled name="filter/arrow-down" />
+              <span class=" m-xl:text-xs">کامپیوتر</span>
             </li>
             <ul class="mr-4">
               <div>
@@ -30,8 +30,8 @@
                   @click="isMenuOpen = !isMenuOpen"
                   class="list-item border-b border-[#EBEBEB]"
                 >
-                  <NuxtIcon filled name="filter/arrow-down" />
-                  <span>سخت افزار و قطعات</span>
+                  <NuxtIcon class=" m-xl:text-xs" filled name="filter/arrow-down" />
+                  <span class=" m-xl:text-xs">سخت افزار و قطعات</span>
                 </li>
                 <ul v-show="isMenuOpen" class="mr-4 text-center">
                   <li
@@ -56,7 +56,7 @@
     <!-- ----------------------- BRAND ----------------------- -->
     <div class="list-section">
       <h6
-        class="font-bold text-lg  text-[#333333] flex items-center justify-between mb-8"
+        class="font-bold text-lg  m-xl:text-base text-[#333333] flex items-center justify-between mb-8"
       >
         <span>برند</span>
         <NuxtIcon filled name="filter/arrow" />
@@ -64,11 +64,11 @@
       <ul>
         <li class="list-item">
           <input class="" type="checkbox" name="samsung" id="samsung" />
-          <span>سامسونگ</span>
+          <span class=" m-xl:text-xs">سامسونگ</span>
         </li>
         <li class="list-item">
           <input class="" type="checkbox" name="sony" id="sony" />
-          <span>سونی</span>
+          <span class=" m-xl:text-xs">سونی</span>
         </li>
       </ul>
     </div>
@@ -86,24 +86,24 @@
     <!-- ----------------------- PRICE RANGE ----------------------- -->
     <div class="list-section">
       <div class="list-item justify-between">
-        <span>محدوده قیمت</span>
+        <span class=" m-xl:text-base">محدوده قیمت</span>
         <NuxtIcon filled name="filter/arrow-down" />
       </div>
       <div class="list-item">
-        <span>از</span>
+        <span class=" m-xl:text-xs">از</span>
         <input
           type="text"
-          class="outline-none text-center border-b-2 border-[#EBEBEB] w-40"
+          class="outline-none text-center border-b-2 border-[#EBEBEB] w-40 m-xl:w-32"
         />
-        <span>تومان</span>
+        <span class=" m-xl:text-xs">تومان</span>
       </div>
       <div class="list-item">
-        <span>تا</span>
+        <span class=" m-xl:text-xs">تا</span>
         <input
           type="text"
-          class="outline-none text-center border-b-2 border-[#EBEBEB] w-40"
+          class="outline-none text-center border-b-2 border-[#EBEBEB] w-40 m-xl:w-32"
         />
-        <span>تومان</span>
+        <span class=" m-xl:text-xs">تومان</span>
       </div>
     </div>
   </div>

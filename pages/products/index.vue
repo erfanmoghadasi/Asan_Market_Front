@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="pt-[110px] flex justify-between">
-      <p class="font-bold text-[#999999] pr-4 m-xl:text-sm">
+      <p class="font-bold text-[#999999] pr-4 m-xl:text-xs">
         فروشگاه آسان مارکت / کامپیوتر / سخت افزار و قطعات / رم ram
       </p>
       <p class="font-bold text-[#333333] pl-4 m-xl:text-sm">موجودی: 65,000,000 تومان</p>
@@ -35,7 +35,7 @@
               <ProductsFilteredProducts />
             </template>
             <template #fallback>
-              <div class="w-full grid auto-cols-min grid-cols-3 gap-6 2xl:grid-cols-4 3xl:grid-cols-5 pl-6">
+              <div class="w-full grid auto-cols-min grid-cols-4 gap-6 2xl:grid-cols-4 3xl:grid-cols-5 pl-6">
                 <UtilsSkeletonCard v-for="s in 16" />
               </div>
             </template>
