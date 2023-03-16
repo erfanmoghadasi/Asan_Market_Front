@@ -1,14 +1,14 @@
 <template>
-    <div class="p-12 w-full h-[400px] flex justify-between border-b-2 border-gray-b7 ">
+    <div class="p-12 w-full h-[400px] m-xl:h-[350px] flex justify-between border-b-2 border-gray-b7 ">
 
 
 <!-- ------------------------------ RIGHT SECTION ----------------------------- --> 
 <div class="flex">
     <div class="h-full w-56 m-xl:w-44 grid items-center">
-    <nuxt-img :src="props.image" />
+    <nuxt-img :src="props.image" class="m-xl:scale-90" />
 </div>
     <div class="h-full flex flex-col justify-between gap-4  ">
-            <h5 class="font-bold text-xl m-xl:text-lg text-[#333333] mb-8">فلش مموری سامسونگ M20k11gh 16GB</h5>
+            <h5 class="font-bold text-xl m-xl:text-lg text-[#333333] mb-8 m-xl:mb-3">فلش مموری سامسونگ M20k11gh 16GB</h5>
             <p class="text-gray-b2 flex items-center justify-start gap-4 text-lg m-xl:text-sm">
                 <NuxtIcon name="factor/shop" filled />
                 <span class=" ">فروشنده فروشگاه اسپیس</span>
@@ -26,7 +26,7 @@
                 <span class=" ">موجود در انبار فروشنده</span>
             </p>
             <p class="relative text-gray-b2 flex items-center justify-start gap-4 text-lg m-xl:text-sm">
-                <NuxtIcon name="factor/dot-line" class="text-[75px] absolute -right-7" filled />
+                <NuxtIcon name="factor/dot-line" class="text-[75px] m-xl:text-[62px] absolute -right-7" filled />
                 <div class="pr-10 flex flex-col gap-5 text-gray-b4">
                     <p class=" flex items-center justify-start gap-4 text-lg m-xl:text-sm ">
                         <NuxtIcon filled name="factor/truck" />

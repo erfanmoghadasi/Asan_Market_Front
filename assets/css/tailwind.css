@@ -48,13 +48,13 @@ html {
         @apply border border-[#ccc] w-full h-14 py-4 px-3 rounded-[10px]
     }
     .c-btn {
-        @apply h-14 cursor-pointer border border-primary-orginal rounded-[10px] text-sm font-medium
+        @apply h-14 m-xl:h-12 cursor-pointer border border-primary-orginal rounded-[10px] text-sm font-medium
     }
     .c-btn-primary {
-        @apply h-14 cursor-pointer border border-primary-orginal rounded-[10px] text-sm font-medium bg-primary-orginal text-white hover:text-primary-orginal hover:bg-white transition-all
+        @apply h-14 m-xl:h-12 cursor-pointer border border-primary-orginal rounded-[10px] text-sm font-medium bg-primary-orginal text-white hover:text-primary-orginal hover:bg-white transition-all
     }
     .c-btn-white {
-        @apply h-14 cursor-pointer border border-primary-orginal rounded-[10px] text-sm font-medium bg-white text-primary-orginal hover:text-white hover:bg-primary-orginal transition-all
+        @apply h-14 m-xl:h-12 cursor-pointer border border-primary-orginal rounded-[10px] text-sm font-medium bg-white text-primary-orginal hover:text-white hover:bg-primary-orginal transition-all
     }
 }
 

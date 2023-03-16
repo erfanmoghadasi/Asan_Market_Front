@@ -45,7 +45,7 @@
           />
         </div>
         <div
-          class="w-[450px] m-xl:w-[370px] h-[400px] flex flex-col justify-between p-6 rounded-[10px] bg-gray-b9 border-2 border-gray-b7"
+          class="w-[450px] m-xl:w-[350px] h-[400px] m-xl:h-[350px] flex flex-col justify-between p-6 rounded-[10px] bg-gray-b9 border-2 border-gray-b7"
         >
           <div class="w-full flex flex-col gap-8">
             <div class="w-full flex items-center justify-between font-medium">
@@ -67,7 +67,7 @@
           </div>
           <button
             @click="() => (isModalOpen = true)"
-            class="c-btn-primary w-full font-bold text-xl m-xl:text-base"
+            class="c-btn-primary w-full font-bold text-xl m-xl:text-sm"
           >
             ثبت و مشاهده پیش فاکتور
           </button>

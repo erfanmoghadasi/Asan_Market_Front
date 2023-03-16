@@ -1,11 +1,11 @@
 <template>
-  <div class="max-w-[1556px] m-xl:max-w-[1180px] pt-36 mx-auto">
+  <div class="max-w-[1556px] m-xl:max-w-[1180px] pt-28 mx-auto">
     <AccountLogoutModal
       :isLogoutModal="isLogoutModal"
       @close-modal="() => (isLogoutModal = false)"
     />
     <div
-      class="flex justify-between items-center px-6 mb-14 h-[91px] w-full bg-gray-b9 border-2 border-gray-b7 rounded-[10px]"
+      class="flex justify-between items-center px-6 mb-14 h-[91px] m-xl:h-[70px] w-full bg-gray-b9 border-2 border-gray-b7 rounded-[10px]"
     >
       <ul class="flex items-center gap-14 m-xl:gap-8">
         <li
@@ -17,17 +17,17 @@
               ? 'text-primary-b4  border-primary-orginal '
               : 'text-gray-b4 border-transparent'
           "
-          class="cursor-pointer border-b-4 py-8 h-full font-medium text-lg m-xl:text-sm flex gap-3 transition-all"
+          class="cursor-pointer border-b-4 py-8 m-xl:py-6 h-full font-medium text-lg m-xl:text-sm flex gap-3 transition-all"
         >
           <NuxtIcon :name="item.icon" filled class="text-2xl m-xl:text-lg" />
           <span>{{ item.title }}</span>
         </li>
       </ul>
       <button
-        class="flex items-center gap-4 px-5 py-4 bg-gray-b8 text-error-b2 rounded-md font-medium tex-lg  m-xl:text-sm  box-content hover:border border border-transparent hover:border-error-b2 hover:bg-white transition-all"
+        class="flex items-center gap-4 px-5 py-4 m-xl:py-3 bg-gray-b8 text-error-b2 rounded-md font-medium tex-lg  m-xl:text-sm  box-content hover:border border border-transparent hover:border-error-b2 hover:bg-white transition-all"
         @click="() => (isLogoutModal = true)"
       >
-        <NuxtIcon name="account/power" filled class="text-2xl m-xl:text-lg" />
+        <NuxtIcon name="account/power" filled class="text-2xl m-xl:text-base" />
         <span>خروج از حساب</span>
       </button>
     </div>
@@ -50,6 +50,7 @@
 import Profile from "/components/Account/Profile.vue";
 import Favourites from "/components/Account/Favourites.vue";
 import Messages from "/components/Account/Messages.vue";
+import Orders from "/components/Account/Orders.vue";
 
 const isLogoutModal = ref(false);
 const selectedNum = ref(1);
@@ -63,6 +64,9 @@ const currentComponent = computed(() => {
 
     case 6:
       return Messages;
+
+    case 7:
+      return Orders;
   }
 });
 const navList = ref([

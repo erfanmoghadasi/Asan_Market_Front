@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed w-full overflow-y-auto min-h-fit  z-50 h-screen bg-black bg-opacity-30 pb-10 px-80 -translate-y-[145px] grid place-items-center"
+    class="fixed top-0 pb-28 w-full overflow-y-auto min-h-fit  z-50 h-screen bg-black bg-opacity-30 px-80 -translate-y-[145px]d grid place-items-center"
   >
     <div class=" mt-20 mx-auto absolute right-[50%] translate-x-1/2 top-0  m-xl:min-w-[1100px] min-w-[1240px] rounded-2xl bg-white">
       <header
